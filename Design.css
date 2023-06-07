@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    perspective: 800px;
+    overflow: hidden;
+  }
+  
+  .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    &:after {
+      content: " ";
+      position: absolute;
+      bottom: -20px;
+      height: 15px;
+      width: 100vw;
+      box-shadow: 0 5px 5px 8px #f0f0f0, inset 0 1px 1px #f0f0f0;
+    }
+  }
+  
+  .title {
+    font-weight: 800;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+  }
+  
+  .wrapper {
+    position: relative;
+    display: flex;
+    transform: rotate3d(0, 1, 0, 30deg);
+    transition: all 400ms cubic-bezier(0,0,.58,1);
+    transform-origin: center left;
+    margin: 0 30px;
+  }
+  
+  .record-wrapper {
+    transition: all 400ms cubic-bezier(0,0,.58,1);
+    transform: translateX(20px);
+    
+    &:after {
+      position: absolute;
+      content: " ";
+      box-shadow: 0 10px 15px 10px #a6a6a6;
+      right: 20px;
+      bottom: 42px;
+      width: 100px;
+      max-height: 0px;
+      z-index: -2;
+      transform: rotate3d(0, 1, 0, 30deg);
+      transform-origin: center center;
+      transform: rotate3d(0, 1, 0, 30deg);
+    }
+  }
+  
+  .record-case {
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 30px);
+    top: 15px;
+    left: 0;
+    background: url('/de.png');
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 41px 0px 26px -36px black, 0 8px 6px -6px;
+    filter: grayscale(90%);
+    transition: all 400ms cubic-bezier(0,0,.58,1);
+    animation: caseback 400ms;
+    z-index: 999;
+    border-radius: 2px;
+    
+    .image {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      background: url('https://upload.wikimedia.org/wikipedia/en/thumb/4/42/Beatles_-_Abbey_Road.jpg/220px-Beatles_-_Abbey_Road.jpg');
+      background-size: cover;
+      background-position: center center;
+      border-radius: 2px;
+        &2 {
+            background: url('https://i.scdn.co/image/ab67616d0000b273f7b7174bef6f3fbfda3a0bb7');
+            background-size: cover;
+            background-position: left center;
+        }
+        
+        &:before {
+            position: absolute;
+            content: " ";
+            box-shadow: 0 10px 25px 20px #555;
+            top: 70%;
+            left: 3px;
+            bottom: 40px;
+            width: 15%;
+            transform: rotate(-28deg);
+            transform-origin: center bottom;
+            z-index: -1;
+            transition: all 400ms;
+        }
+    }
+  }
+  
+  .record {
+    position: relative;
+    margin: 19px auto;
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    background: 
+      linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, .85) 40%) no-repeat 100% 0,
+      linear-gradient(60deg, rgba(42, 41, 40, .85) 60%, transparent 60%) no-repeat 0 100%,
+      repeating-radial-gradient(#2a2928, #2a2928 2px, #ada9a0 3px, #2a2928 4px);
+    background-size: 50% 100%, 100% 50%, 100% 100%;
+    transition: all 400ms cubic-bezier(0,0,.58,1);
+    z-index: 1;
+  
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(-105deg);
+      border: solid 1px #d9a388;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #b5ac9a;
+      background: url('/de.png');
+      background-size: contain;
+      background-position: bottom bottom;
+      content: '';
+    }
+    
+    &2:after {
+      background: url('/de.png');
+      background-size: contain;
+      background-position: center center;
+    }
+  }
+  
+  .wrapper:hover .record {
+    transform: rotate(105deg);
+    transition-delay: 200ms;
+  }
+  
+  .wrapper:hover {
+    transform: rotate3d(0, 0, 0, 30deg);
+    transform: translateZ(50px);
+    margin: 0 70px;
+    
+    .record-wrapper {
+      transform: translateX(80px);
+      transition-delay: 200ms;
+    }
+    
+    .record-case {
+      animation: case 400ms forwards;
+      
+      .image:before {
+        transform: translateX(20px);
+      }
+    }
+  }
+  
+  @keyframes case {
+    0% {
+      transform: translateX(0px);
+    }
+    
+    30% {
+      transform: translateX(10px);
+    }
+    
+    100% {
+      transform: translateX(-20px);
+    }
+  }
+  
+  @keyframes caseback {
+    0% {
+      transform: translateX(-20px);
+    }
+    
+    70% {
+      transform: translateX(10px);
+    }
+    
+    100% {
+      transform: translateX(0px);
+    }
+  }
