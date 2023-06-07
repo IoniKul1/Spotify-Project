@@ -1,0 +1,14 @@
+{
+  "ratedShows": [
+    {
+      "showName": "New Label Experience",
+      "rating": 5,
+      "ratedAt": "2022-10-17T20:57:10.550155Z"
+    },
+    {
+      "showName": "Anécdotas - Nicolás De Tracy",
+      "rating": 5,
+      "ratedAt": "2022-03-11T17:10:58.124248Z"
+    }
+  ]
+}
