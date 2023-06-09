@@ -11,7 +11,7 @@
 <div class="container">
   <div class="caja">
     <div class="first">
-    <img src="/Yoni.png" alt="Foto de perfil">
+    <img src="/Images/Yoni.png" alt="Foto de perfil">
     <div class="box-content">
       <h1 style="text-align: left; margin-top: 60px;">Yoni</h1>
       <h2 style="text-align: left;">Techno</h2>
@@ -24,7 +24,7 @@
         <div class='record'></div>
       </div>
       <div class="record-case">
-        <div class="image" style="background-image: url(/March.png);"></div>
+        <div class="image" style="background-image: url(/Images/March.png);"></div>
       </div>
     </div>
     <div class="wrapper">
@@ -32,16 +32,16 @@
         <div class='record'></div>
       </div>
       <div class="record-case">
-        <div class="image" style="background-image: url(/Lights.png);"></div>
+        <div class="image" style="background-image: url(/Images/Lights.png);"></div>
       </div>
     </div>
   </div>
   <br>
-  <div class="button">Play</div>
+  <div class="button"><a href="#1">Play</a></div>
   </div>
   <div class="caja">
     <div class="first">
-    <img src="/Tino.png" alt="Foto de perfil">
+    <img src="/Images/Tino.png" alt="Foto de perfil">
     <div class="box-content">
       <h1 style="text-align: left; margin-top: 60px;">Martin</h1>
       <h2 style="text-align: left;">Rap</h2>
@@ -54,7 +54,7 @@
         <div class='record'></div>
       </div>
       <div class="record-case">
-        <div class="image" style="background-image: url(/RNP.png);"></div>
+        <div class="image" style="background-image: url(/Images/RNP.png);"></div>
       </div>
     </div>
     
@@ -63,26 +63,32 @@
         <div class='record'></div>
       </div>
       <div class="record-case">
-        <div class="image" style="background-image: url(/EM.png);"></div>
+        <div class="image" style="background-image: url(/Images/EM.png);"></div>
       </div>
     </div>
   </div>
   <br>
-  <div class="button">Play</div>
+  <div class="button"><a href="#2">Play</a></div>
 </div>
 </div>
 
-<div class="container-box">
-  <div class="box">
-    <img src="/Yoni.png" alt="Foto de perfil">
+<div class="container-box" id="1">
+  <div class="box" >
+    <img src="Images/Yoni.png" alt="Foto de perfil">
+    <canvas id="radarChart"></canvas>
   </div>
 </div>
 
-<div class="container-box">
+<div class="container-box" id="2">
   <div class="box">
-    <img src="/Tino.png" alt="Foto de perfil">
+    <img src="/Images/Tino.png" alt="Foto de perfil">
   </div>
 </div>
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<script src="script.js"></script>
 </body>
 </html>
+

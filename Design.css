@@ -262,7 +262,7 @@ h1 {
 }
 
 .box {
-  background: linear-gradient(rgb(35, 171, 107), rgb(0, 0, 0));
+  background: linear-gradient(rgb(170, 170, 170),rgb(255, 255, 255));
   border-radius: 10px;
   padding: 20px;
   text-align: left;
@@ -281,4 +281,8 @@ h1 {
   height: 20%;
   padding: 5%;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
