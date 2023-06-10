@@ -12,7 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: #121212;
+  background-image: url(/Images/image2.png);
+  background-size: cover;
 }
 
 .container {
@@ -180,8 +181,11 @@ body {
 }
 
 .caja {
-  background: linear-gradient(rgb(35, 171, 107), rgb(0, 0, 0));
-  border-radius: 10px;
+  background: rgba(50, 50, 50, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
   padding: 20px;
   text-align: left;
   flex: 1;
@@ -262,17 +266,31 @@ h1 {
 }
 
 .box {
-  background: linear-gradient(rgb(170, 170, 170),rgb(255, 255, 255));
-  border-radius: 10px;
+  background: rgba(50, 50, 50, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
   padding: 20px;
   text-align: left;
   flex: 1;
   height: 100%;
   width: 100%;
   border: 1px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.column {
+  background-color: rgb(237, 237, 237);
+  padding: 10px;
   flex-direction: column; /* Cambiamos a dirección de fila para colocar la foto y el contenido en línea *//* Centramos verticalmente el contenido */
   margin: 0 10px;
+}
+
+.column_2 {
+  background-color: rgba(211, 211, 211, 0);
+  padding: 10px;
 }
 
 .container-box {
@@ -285,4 +303,141 @@ h1 {
 
 html {
   scroll-behavior: smooth;
+  background-color: #000000;
 }
+
+header {
+  background-color: #000000;
+  padding: 10px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30%;
+  position:sticky;
+}
+
+.logo {
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #2a2a2a;
+}
+
+
+.card-container {
+  position: relative; /* Establece el contenedor como posición relativa */
+  height: 100vh; /* Ajusta la altura para que las cartas cubran toda la pantalla */
+  padding: 20px;
+  overflow-x: scroll; /* Permite el desplazamiento horizontal */
+  white-space: nowrap; /* Evita que las cartas se colapsen en varias líneas */
+}
+
+.card {
+  position: relative; /* Establece la posición relativa para el contenido de la carta */
+  display: inline-block; /* Hace que las cartas se muestren en línea */
+  width: 200px;
+  height: 300px;
+  background: rgba(50, 50, 50, 0.41);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.7px);
+  -webkit-backdrop-filter: blur(5.7px);
+  border-radius: 5px;
+  margin-right: -30px; /* Espacio entre las cartas */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+  transition: transform 0.3s ease-in-out; /* Transición suave para la transformación */
+}
+
+.card:hover {
+  transform: translateX(-10px); /* Desplaza la carta hacia la izquierda al pasar el mouse por encima */
+  z-index: 1; /* Asegura que la carta esté en primer plano al pasar el mouse por encima */
+}
+
+.card-content {
+  position: absolute; /* Establece la posición absoluta para el contenido de la carta */
+  top: 0;
+  left: 0;
+  display: row;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #000000;
+}
+
+.card.selected {
+  z-index: 2; /* Asegura que las cartas seleccionadas estén en el primer plano */
+  transform: none; /* Quita la transformación de las cartas seleccionadas */
+}
+
+.card.selected .card-content {
+  display: block; /* Muestra el contenido de las cartas seleccionadas */
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 30%;
+  object-fit: contain;
+}
+
+    .card {
+    position: relative;
+    display: row;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .card img {
+    max-width: 100%;
+    max-height: 30%;
+    object-fit: contain;
+  }
+
+  .card.selected {
+    box-shadow: 0 0 10px #000000;
+    transform: translateY(-6px);
+  }
+
+  .card h1{
+      color: aliceblue;
+      font-size: xx-large;
+  }
+
+  .card h2{
+      color: aliceblue;
+  }
+  .card h3{
+      color: aliceblue;
+  }
