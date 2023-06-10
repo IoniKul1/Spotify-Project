@@ -11,7 +11,7 @@ const data = {
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(255, 99, 132)'
   }, { 
-    label: 'Rap music',
+    label: 'Cachengue',
     data: [57.15, 70.49, 61.13, 6.83, 73.4, 46.02],
     fill: true,
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -19,8 +19,8 @@ const data = {
     pointBackgroundColor: 'rgb(54, 162, 235)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(54, 162, 235)'
-  }]
+    pointHoverBorderColor: 'rgb(54, 162, 235)'}],
+  
 };
 
 const config = {
@@ -53,4 +53,4 @@ const config = {
   }
 };
 
-const radarChart = new Chart(document.getElementById('radarChart'), config);
+const radarChart = new Chart(document.getElementById('T-A'), config);
