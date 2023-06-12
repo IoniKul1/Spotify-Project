@@ -1,25 +1,26 @@
 const dataRA = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
   datasets: [{
-    label: 'Melodic Techno music',
-    data: [33.048, 62.09, 62.84, 61.4, 44.3, 2.98],
+    label: 'Rap',
+    data: [51.75, 70.33999999999999, 61.129999999999995, 8.8355, 73.3, 22.711000000000002],
     fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
+    backgroundColor: 'rgb(30,144,255,0.2)',
+    borderColor: 'rgb(30,144,255)',
+    pointBackgroundColor: 'rgb(30,144,255)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
+    pointHoverBorderColor: 'rgb(30,144,255)'
   }, { 
-    label: 'Cachengue',
-    data: [57.15, 70.49, 61.13, 6.83, 73.4, 46.02],
+    label: 'Alternative',
+    data: [27.9681, 40.9, 53.239000000000004, 43.56630299999999, 17.9, 4.684],
     fill: true,
-    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    borderColor: 'rgb(54, 162, 235)',
-    pointBackgroundColor: 'rgb(54, 162, 235)',
+    backgroundColor: 'rgb(240,230,140,0.2)',
+    borderColor: 'rgb(240,230,140)',
+    pointBackgroundColor: 'rgb(240,230,140)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(54, 162, 235)'}],
+    pointHoverBorderColor: 'rgb(240,230,140)'
+  }],
 };
 
 const configRA = {

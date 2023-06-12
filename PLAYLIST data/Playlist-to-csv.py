@@ -73,8 +73,8 @@ def main():
     client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-    df = convert_json_into_df(results=sp.playlist('7cQqricErf9g3qes99dssZ?si'), sp=sp)
-    df.to_csv("Alternative.csv", index=False)    
+    df = convert_json_into_df(results=sp.playlist('42FQPDeODQRj9SL4SJgL78?si'), sp=sp)
+    df.to_csv("Rap.csv", index=False)    
 
 if __name__ == '__main__':
     main()
@@ -93,3 +93,6 @@ if __name__ == '__main__':
 
 #Alternative
 #https://open.spotify.com/playlist/7cQqricErf9g3qes99dssZ?si=95b252dc8ace4d22
+
+#Rap
+#https://open.spotify.com/playlist/42FQPDeODQRj9SL4SJgL78?si=sy5OMeWjT6aKmwEKyJ76mg

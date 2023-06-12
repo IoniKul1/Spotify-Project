@@ -1,25 +1,26 @@
 const dataCL = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
   datasets: [{
-    label: 'Melodic Techno music',
-    data: [33.048, 62.09, 62.84, 61.4, 44.3, 2.98],
-    fill: true,
-    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-    borderColor: 'rgb(255, 99, 132)',
-    pointBackgroundColor: 'rgb(255, 99, 132)',
-    pointBorderColor: '#fff',
-    pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255, 99, 132)'
-  }, { 
     label: 'Cachengue',
-    data: [57.15, 70.49, 61.13, 6.83, 73.4, 46.02],
+    data: [67.59, 70.61000000000001, 67.03999999999999, 0.004240299999999999, 63.0, 9.41],
     fill: true,
-    backgroundColor: 'rgba(54, 162, 235, 0.2)',
-    borderColor: 'rgb(54, 162, 235)',
-    pointBackgroundColor: 'rgb(54, 162, 235)',
+    backgroundColor: 'rgb(46,139,87,0.2)',
+    borderColor: 'rgb(46,139,87)',
+    pointBackgroundColor: 'rgb(46,139,87)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(54, 162, 235)'}],
+    pointHoverBorderColor: 'rgb(46,139,87)'
+  }, { 
+    label: 'Lo-Fi Beats',
+    data: [11.375000000000002, 57.07000000000001, 18.019999999999996, 87.22000000000001, 45.6, 4.1770000000000005],
+    fill: true,
+    backgroundColor: 'rgb(255,182,193,0.2)',
+    borderColor: 'rgb(255,182,193)',
+    pointBackgroundColor: 'rgb(255,182,193)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(255,182,193)'
+  }],
 };
 
 const configCL = {
