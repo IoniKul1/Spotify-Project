@@ -1,4 +1,4 @@
-const data = {
+const data10 = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
   datasets: [{
     label: 'Melodic Techno music',
@@ -23,9 +23,9 @@ const data = {
   
 };
 
-const config = {
+const config10 = {
   type: 'radar',
-  data,
+  data10,
   options: {
     plugins: {
       legend: {
@@ -53,4 +53,4 @@ const config = {
   }
 };
 
-const radarChart = new Chart(document.getElementById('R-Ro'), config);
+const radarChart10 = new Chart(document.getElementById('R-Ro'), config10);

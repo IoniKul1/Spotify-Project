@@ -317,3 +317,12 @@ header {
     border-radius: 20px ;
     background-color: #00000062;
   }
+
+  .column {
+    position: relative;
+}
+.column canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
