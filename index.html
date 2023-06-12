@@ -21,57 +21,65 @@
         <div class="caja">
             <br>
             <h1 style="margin-left: 4%;">Elige dos perfiles</h1>
-            <br><br><br>
-            <div class="card-container">
-                <div class="card" id="0" data-card-id="0">
-                    <div class="card-content">
-                        <img src="/Images/Yoni.png" alt="Foto de perfil">
-                        <h1>Yoni</h1>
-                        <h3>Techno</h3>
+            <br><br><br>    
+                <div class="container-box">
+                    <div class="card-container">
+                        <div class="card" id="0" data-card-id="0">
+                            <div class="card-content">
+                                <img src="/Images/Yoni.png" alt="Foto de perfil">
+                                <h1>Yoni</h1>
+                                <h3>Techno</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="1" data-card-id="1">
+                            <div class="card-content">
+                                <img src="/Images/Martin.png" alt="Foto de perfil">
+                                <h1>Martin</h1>
+                                <h3>Rap</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="2" data-card-id="2">
+                            <div class="card-content">
+                                <img src="/Images/John.png" alt="Foto de perfil">
+                                <h1>John</h1>
+                                <h3>Cachengue</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="3" data-card-id="3">
+                            <div class="card-content">
+                                <img src="/Images/Phillip.png" alt="Foto de perfil">
+                                <h1>Phillip</h1>
+                                <h3>Lo-Fi</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="4" data-card-id="4">
+                            <div class="card-content">
+                                <img src="/Images/Alice.png" alt="Foto de perfil">
+                                <h1>Alice</h1>
+                                <h3>Rock</h3>
+                            </div>
+                        </div>
+                        <div class="card" id="5" data-card-id="5">
+                            <div class="card-content">
+                                <img src="/Images/Bob.png" alt="Foto de perfil">
+                                <h1>Bob</h1>
+                                <h3>Alternative</h3>
+                            </div>
+                        </div>
                     </div>
+                    <div class="box">
+                        <div class="tracker-id">
+                            <h1 style="font-size: x-large;">Tracker ID</h1>
+                            <div id="song-list-container" style="font-size: 15px;"></div>
+                          </div>
+                      </div>
                 </div>
-                <div class="card" id="1" data-card-id="1">
-                    <div class="card-content">
-                        <img src="/Images/Martin.png" alt="Foto de perfil">
-                        <h1>Martin</h1>
-                        <h3>Rap</h3>
-                    </div>
-                </div>
-                <div class="card" id="2" data-card-id="2">
-                    <div class="card-content">
-                        <img src="/Images/John.png" alt="Foto de perfil">
-                        <h1>John</h1>
-                        <h3>Cachengue</h3>
-                    </div>
-                </div>
-                <div class="card" id="3" data-card-id="3">
-                    <div class="card-content">
-                        <img src="/Images/Phillip.png" alt="Foto de perfil">
-                        <h1>Phillip</h1>
-                        <h3>Lo-Fi</h3>
-                    </div>
-                </div>
-                <div class="card" id="4" data-card-id="4">
-                    <div class="card-content">
-                        <img src="/Images/Alice.png" alt="Foto de perfil">
-                        <h1>Alice</h1>
-                        <h3>Rock</h3>
-                    </div>
-                </div>
-                <div class="card" id="5" data-card-id="5">
-                    <div class="card-content">
-                        <img src="/Images/Bob.png" alt="Foto de perfil">
-                        <h1>Bob</h1>
-                        <h3>Alternative</h3>
-                    </div>
-                </div>
-            </div>
-
             <div class="selection-container">
                 <div class="column">
                     <div class="choice first-choice-container" data-card-id=""></div>
                 </div>
                 <div class="column" id="graph">
+                    <canvas id="n" style="visibility: visible;"></canvas>
                     <canvas id="T-C" style="visibility: hidden;"></canvas>
                     <canvas id="T-R" style="visibility: hidden;"></canvas>
                     <canvas id="T-L" style="visibility: hidden;"></canvas>
@@ -96,10 +104,11 @@
                     <div class="choice second-choice-container" data-card-id=""></div>
                 </div>
             </div>
-
+            <div class=""></div>
         </div>
     </div>
 
+    
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
@@ -123,6 +132,7 @@
 <script src="/Charts/Lo-fi/Charty-L-A.js"></script>
 
 <script src="/Charts/Rock/Charty-Ro-A.js"></script>
+<script src="/Charts/nothing.js"></script>
 
 <script src="Cardy.js"></script>
 </html>
