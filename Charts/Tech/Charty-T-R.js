@@ -1,4 +1,4 @@
-const data4 = {
+const dataTR = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
   datasets: [{
     label: 'Melodic Techno music',
@@ -11,7 +11,7 @@ const data4 = {
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(255, 99, 132)'
   }, { 
-    label: 'Rap music',
+    label: 'Cachengue',
     data: [57.15, 70.49, 61.13, 6.83, 73.4, 46.02],
     fill: true,
     backgroundColor: 'rgba(54, 162, 235, 0.2)',
@@ -20,17 +20,16 @@ const data4 = {
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(54, 162, 235)'}],
-  
 };
 
-const config4 = {
+const configTR = {
   type: 'radar',
-  data4,
+  data: dataTR,
   options: {
     plugins: {
       legend: {
         labels: {
-          color: 'white'  // Cambiar el color de las etiquetas de los conjuntos de datos a blanco
+          color: 'white'
         }
       }
     },
@@ -53,4 +52,4 @@ const config4 = {
   }
 };
 
-const radarChart4 = new Chart(document.getElementById('T-R'), config4);
+const radarChartTR = new Chart(document.getElementById('T-R'), configTR);

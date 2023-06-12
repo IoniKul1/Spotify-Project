@@ -1,4 +1,4 @@
-const data7 = {
+const dataRA = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
   datasets: [{
     label: 'Melodic Techno music',
@@ -20,17 +20,16 @@ const data7 = {
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(54, 162, 235)'}],
-  
 };
 
-const config7 = {
+const configRA = {
   type: 'radar',
-  data7,
+  data: dataRA,
   options: {
     plugins: {
       legend: {
         labels: {
-          color: 'white'  // Cambiar el color de las etiquetas de los conjuntos de datos a blanco
+          color: 'white'
         }
       }
     },
@@ -53,4 +52,4 @@ const config7 = {
   }
 };
 
-const radarChart7 = new Chart(document.getElementById('R-A'), config7);
+const radarChartRA = new Chart(document.getElementById('R-A'), configRA);

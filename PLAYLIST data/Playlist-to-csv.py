@@ -73,13 +73,23 @@ def main():
     client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
     sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
-    df = convert_json_into_df(results=sp.playlist('42FQPDeODQRj9SL4SJgL78?si'), sp=sp)
-    df.to_csv("Rap.csv", index=False)    
+    df = convert_json_into_df(results=sp.playlist('7cQqricErf9g3qes99dssZ?si'), sp=sp)
+    df.to_csv("Alternative.csv", index=False)    
 
 if __name__ == '__main__':
     main()
 
-#https://open.spotify.com/playlist/7cLua2vBmBZsQQYoPXNduD?si=525a256de69a4563
-#https://open.spotify.com/playlist/02rWnWL0w99LFPWwBAlE5i?si=73db5681c469482f
-#https://open.spotify.com/playlist/3NSJo1ePI2BfvOpn2c80d8?si=248da82e652d4da7
-#https://open.spotify.com/playlist/42FQPDeODQRj9SL4SJgL78?si=sy5OMeWjT6aKmwEKyJ76mg
+#Cachengue
+#https://open.spotify.com/playlist/730nssfu4RYu0l23ciXGSV?si=48e80de1e6ea46a6
+
+#Techno
+#https://open.spotify.com/playlist/4ehe0ydNTdpDjsq6Cs5Y1R?si=68026061b788418e
+
+#Lofi
+#https://open.spotify.com/playlist/4jX2YpicQ3Src59p5lKTxZ?si=1a2636b0c30c42dc
+
+#Rock
+#https://open.spotify.com/playlist/7mXkjesmnmemzKZautoTiX?si=8f9a2919c4364636
+
+#Alternative
+#https://open.spotify.com/playlist/7cQqricErf9g3qes99dssZ?si=95b252dc8ace4d22

@@ -1,7 +1,7 @@
-const data15 = {
+const dataCRo = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
   datasets: [{
-    label: 'Melodic Techno music',
+    label: 'Techno',
     data: [33.048, 62.09, 62.84, 61.4, 44.3, 2.98],
     fill: true,
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -20,17 +20,16 @@ const data15 = {
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(54, 162, 235)'}],
-  
 };
 
-const config15 = {
+const configCRo = {
   type: 'radar',
-  data15,
+  data: dataCRo,
   options: {
     plugins: {
       legend: {
         labels: {
-          color: 'white'  // Cambiar el color de las etiquetas de los conjuntos de datos a blanco
+          color: 'white'
         }
       }
     },
@@ -53,4 +52,4 @@ const config15 = {
   }
 };
 
-const radarChart15 = new Chart(document.getElementById('C-Ro'), config15);
+const radarChartCRo = new Chart(document.getElementById('C-Ro'), configCRo);
