@@ -28,7 +28,7 @@ window.onload = function() {
   
       ctx.clearRect(0, 0, graphWidth, graphHeight);
   
-      ctx.fillStyle = "#545454";
+      ctx.fillStyle = "#239419";
   
       var x = 0;
   

@@ -18,21 +18,15 @@
         <div class="caja" style="height: 650px; margin-top: 7%;">
             <div class="Titlee" style="margin-left: 36%; margin-top: 15%;">
             <h1>Bienvenidos</h1>
-            <div class="button-container">
-                <button class="circular-button">
-                  <span class="play-icon"></span>
-                </button>
-                <button class="control-button">Playback</button>
-                <button class="control-button">Forward</button>
-              </div>
+            <a class="play-btn" href="#caja" style="margin-left: 15%;"></a>
         </div>
         </div>
 
     </div>
     <div class="container" style="margin-top: -0%;">
-        <div class="caja">
+        <div class="caja" id="caja">
             <br>
-            <h1 style="margin-left: 4%;">Elige dos perfiles</h1>
+            <h1 style="margin-left: 4%; margin-bottom: -2%; font-size: xx-large;">Elige dos perfiles</h1>
             <br><br><br>    
                 <div class="container-box">
                     <div class="card-container">
@@ -82,8 +76,20 @@
                     <div class="box">
                         <div class="tracker-id">
                             <h1 style="font-size: xx-large; margin-top: -4%;">Tracker ID</h1>
-                            <div id="card-image-container"></div>
-                            <div id="song-list-container" style="font-size: 15px;"></div>
+                                <div id="card-image-container"></div>
+                                    <div id="song-list-container" style="font-size: 15px;"></div>
+                                    <div class="container-songs">
+                                        <div class="song-selector">
+                                            <label for="song-select">Selecciona una canción:</label>
+                                            <select id="song-select">
+                                                <option value="/repro music/rnp-feat-anderson-paak-official-lyric-video.mp3">RNP CORDAE</option>
+                                                <option value="otra-cancion.mp3">IONE GILL</option>
+                                                <!-- Agrega más opciones de canciones según sea necesario -->
+                                            </select>
+                                        </div>
+                                        <canvas id="song-graph"></canvas>
+                                        <audio id="audio-player" controls></audio>
+                                    </div>
                           </div>
                       </div>
                 </div>
@@ -148,5 +154,7 @@
 <script src="/Charts/nothing.js"></script>
 
 <script src="Cardy.js"></script>
+<script src="/repro music/script.js"></script>
+
 </html>
 

@@ -301,3 +301,4 @@ $('.txt').html(function(i, html) {
 
   return '<span>' + chars.join('</span><span>') + '</span>';
 });
+
