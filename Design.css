@@ -12,8 +12,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url(/Images/image2.png);
-  background-size: cover;
+  background-image: url(/Images/patronn.png);
+  background-size:cover;
 }
 
 .container {
@@ -25,13 +25,12 @@ body {
 }
 
 .caja {
-  background: rgba(50, 50, 50, 0.41);
+  background: rgba(50, 50, 50, 0.228);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5.7px);
   -webkit-backdrop-filter: blur(5.7px);
   padding: 20px;
-  text-align: left;
   flex: 1;
   height: 100%;
   width: 100%;
@@ -110,7 +109,7 @@ h1 {
 }
 
 .box {
-  flex: 0 0 30%; /* El contenedor del tracker id ocupa el 30% del espacio */
+  flex: 0 0 30%;
   background: rgba(50, 50, 50, 0.41);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -119,8 +118,8 @@ h1 {
   padding: 20px;
   text-align: left;
   display: flex;
-  align-items: flex-start; /* Alinea el contenido del tracker id en la parte superior */
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start; /* Cambia el valor de "center" a "flex-start" para alinear hacia la izquierda */
 }
 
 
@@ -147,22 +146,29 @@ html {
   background-color: #000000;
 }
 
-header {
-  background-color: #000000;
-  padding: 10px;
-  color: #fff;
+#navbar {
+  background-color: #333;
   position: fixed;
-  width: 100%;
   top: 0;
-  left: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index: 9999; 
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  z-index: 9999;
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #72727235;
+  color: rgb(255, 255, 255);
 }
 
 .logo {
@@ -173,30 +179,6 @@ header {
   width: 50px;
   height: 50px;
 }
-
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar ul li {
-  margin-right: 10px;
-}
-
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.navbar ul li a:hover {
-  background-color: #2a2a2a;
-}
-
-
 .card-container {
   flex: 0 0 70%; /* El contenedor de las cartas ocupa el 70% del espacio */
   margin-right: 20px; /* Agrega espacio entre las cartas y el tracker id */
@@ -205,20 +187,20 @@ header {
 .card {
   position: relative; /* Establece la posición relativa para el contenido de la carta */
   display: inline-block; /* Hace que las cartas se muestren en línea */
-  width: 365px;
-  height: 440px;
-  background: rgba(50, 50, 50, 0.41);
+  width: 190px;
+  height: 190px;
+  background: rgba(50, 50, 50,1);
   border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.7px);
-  -webkit-backdrop-filter: blur(5.7px);
-  margin-right: -190px; /* Espacio entre las cartas */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.396);
+  margin-right: -60px; /* Espacio entre las cartas */
   cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
   transition: transform 0.3s ease-in-out; /* Transición suave para la transformación */
 }
 
 .card:hover {
-  transform: translateX(-10px); /* Desplaza la carta hacia la izquierda al pasar el mouse por encima */
+  transform: translateX(-10px);
+  background: rgba(50, 50, 50,0.81);
+   /* Desplaza la carta hacia la izquierda al pasar el mouse por encima */
 }
 
 .card-content {
@@ -231,17 +213,13 @@ header {
   color: #000000;
 }
 
-.card.selected {
-  stroke: #000000;
-}
-
 .card.selected .card-content {
   display: block; /* Muestra el contenido de las cartas seleccionadas */
 }
 
 .card img {
   max-width: 100%;
-  max-height: 30%;
+  max-height: 100%;
   object-fit: contain;
 }
 
@@ -257,14 +235,20 @@ header {
     max-width: 100%;
     max-height: 30%;
     object-fit: contain;
+    margin-left: -15%;
   }
 
   .card.selected {
-    box-shadow: 0 0 10px #ffffff;
-    transform: translateY(-6px);
+    box-shadow: 0 0 10px #000000;
+    transform: translateY(-10px);
+    background: rgba(50, 50, 50, 0.41);
+    backdrop-filter: blur(5.7px);
+    -webkit-backdrop-filter: blur(5.7px);
+    
   }
 
   .card h1{
+      margin-top: 5%;
       color: aliceblue;
       font-size: xx-large;
   }
@@ -304,6 +288,7 @@ header {
     height: 500px;
     padding: 20px;
     border-radius: 4% ;
+
   }
   
   .column {
@@ -315,6 +300,7 @@ header {
 
   .column {
     position: relative;
+    justify-content: center;
 }
 .column canvas {
     position: absolute;
@@ -326,7 +312,7 @@ header {
 }
 
 #song-list-container ul {
-  font-weight: bold;
+  font-weight: 500;
   padding-left: 0;
   list-style: none;
 }
@@ -338,5 +324,50 @@ header {
 }
 
 .tracker-id {
+  width: 100%;
+  margin-top: 20px;
+  height: 600px;
+  margin-right: 10px;
+}
+
+.tracker-id h1 {
+  margin-bottom: 10px;
   text-align: left;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.circular-button {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: green;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.play-icon {
+  width: 60px;
+  height: 60px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 22px solid white;
+}
+
+.control-button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: green;
+  font-size: 20px;
+  margin-right: 10px;
 }

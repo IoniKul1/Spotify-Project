@@ -29,6 +29,7 @@ cards.forEach(card => {
     }
     toggleGraph();
     showCardInformation(card.getAttribute('data-card-id'));
+    showCardImage(card.getAttribute('data-card-id'));
   });
 });
 
@@ -58,9 +59,7 @@ function updateChoices() {
     }
   });
 
-  // Add a line break between the two lists
-  const lineBreak = document.createElement('hr');
-  firstChoiceContainer.appendChild(lineBreak);
+  // Add a line break between the two li
 }
 
 function toggleGraph() {
@@ -84,7 +83,6 @@ function barcharts(x, y) {
     element.style.visibility = 'hidden';
   });
 
-  // Show the corresponding chart based on the values of x and y
   if ((x == 0 && y == 1) || (x == 1 && y == 0)) {
     document.getElementById('T-R').style.visibility = 'visible';
   }
@@ -102,7 +100,7 @@ function barcharts(x, y) {
   }
 
   if ((x == 0 && y == 5) || (x == 5 && y == 0)) {
-    document.getElementById('T-P').style.visibility = 'visible';
+    document.getElementById('T-A').style.visibility = 'visible';
   }
 
   if ((x == 1 && y == 2) || (x == 2 && y == 1)) {
@@ -118,7 +116,7 @@ function barcharts(x, y) {
   }
 
   if ((x == 1 && y == 5) || (x == 5 && y == 1)) {
-    document.getElementById('R-P').style.visibility = 'visible';
+    document.getElementById('R-A').style.visibility = 'visible';
   }
 
   if ((x == 2 && y == 3) || (x == 3 && y == 2)) {
@@ -130,7 +128,7 @@ function barcharts(x, y) {
   }
 
   if ((x == 2 && y == 5) || (x == 5 && y == 2)) {
-    document.getElementById('C-P').style.visibility = 'visible';
+    document.getElementById('C-A').style.visibility = 'visible';
   }
 
   if ((x == 3 && y == 4) || (x == 4 && y == 3)) {
@@ -138,36 +136,17 @@ function barcharts(x, y) {
   }
 
   if ((x == 3 && y == 5) || (x == 5 && y == 3)) {
-    document.getElementById('L-P').style.visibility = 'visible';
+    document.getElementById('L-A').style.visibility = 'visible';
   }
 
   if ((x == 4 && y == 5) || (x == 5 && y == 4)) {
-    document.getElementById('Ro-P').style.visibility = 'visible';
+    document.getElementById('Ro-A').style.visibility = 'visible';
   }
 }
 
 function showCardInformation(cardId) {
   const cardInfo = getCardInformation(cardId);
   cardInformation.textContent = cardInfo;
-}
-
-function getCardInformation(cardId) {
-  switch (cardId) {
-    case '0':
-      return 'This card represents the Pop genre.';
-    case '1':
-      return 'This card represents the Rock genre.';
-    case '2':
-      return 'This card represents the Hip Hop genre.';
-    case '3':
-      return 'This card represents the Electronic genre.';
-    case '4':
-      return 'This card represents the Reggae genre.';
-    case '5':
-      return 'This card represents the Jazz genre.';
-    default:
-      return '';
-  }
 }
 
 function showSongs(cardId) {
@@ -203,17 +182,17 @@ function hideSongs() {
 function getSongsForCard(cardId) {
   switch (cardId) {
     case '0':
-      return ['Song 1', 'Song 2', 'Song 3'];
+      return ['Secrets - Hux & Thin, Galo Azin', 'Lemonade - Niko The Kid', 'Organ Belta - Jamie Roy', 'Singularity - WLAD Remix - Sidney Charles', 'Spanish Mode - Paskman', 'Chit Chat - Milion (NL)', 'Bring A Friend - Hood Rich', 'What Is This - James Dexter', 'Instate - Original Mix - Rich NxT', 'Rotate - Benjermain'];
     case '1':
-      return ['Song A', 'Song B', 'Song C'];
+      return ['RNP - Cordae, Anderson .Paak', 'Rain Man - Eminem', 'Congratulations (feat. Bilal) - Mac Miller, Bilal', 'Mr. Rager - Kid Cudi', 'No Role Modelz - J. Cole', 'The Real Slim Shady - Eminem', 'Without Me - Eminem', 'Mockingbird - Eminem', 'Superman - Eminem, Dina Rae', 'Maytag (Tax Free) - Ben Reilly'];
     case '2':
-      return ['Song X', 'Song Y', 'Song Z'];
+      return ['M.A - Remix - BM, Callejero Fino, La Joaqui', 'Un Finde - Remix - Maty Deejay, DJ Roma', 'DISCOTEKA - The La Planta, BM, Alejo Isakk', 'Un X100To - Remix - Emmi Dj', 'Pobre Corazón - Ke Personajes, Onda Sabanera', 'En La Intimidad - Remix - Tomy DJ, El Kaio', 'Jagger.mp3 - Remix - Tomy DJ', 'Los del Espacio - Tiago PZK, Duki, Emilia, (...)', 'Disfruto - Ke Personajes', 'Vida Gangster - Remix - Tomy DJ'];
     case '3':
-      return ['Song P', 'Song Q', 'Song R'];
+      return ['Glowing Lights - No Spirit', 'Fireflies - Kanisan, frad', 'Recharge - Yasumu', 'Floating Island - Dimension 32', 'Plume - Dimension 32, Hevi', 'Epilogue - mell-ø, Ambulo', 'A Wave In The Ocean - Laffey', 'Skipping Rocks - Laffey', 'C U in Class! - Flovry, tender spring', 'Lilac - Kainbeats'];
     case '4':
-      return ['Song M', 'Song N', 'Song O'];
+      return ['You Shook Me All Night Long - AC/DC', "Welcome To The Jungle - Guns N' Roses", 'Pour Some Sugar On Me - Def Leppard', 'Jump - 2015 Remaster - Van Halen', 'Another One Bites The Dust - Queen', 'Every Breath You Take - The Police', 'Should I Stay or Should I Go - The Clash', "Livin' On A Prayer - Bon Jovi", "I Was Made For Lovin' You - KISS", 'Rock You Like A Hurricane - Scorpions'];
     case '5':
-      return ['Song J', 'Song K', 'Song L'];
+      return ['Heartless - 1800 Moe, James Perry', 'Remedy - Ret', 'Gentle Rainfall - Weston Brown', 'Fly - Paradise Circus', 'By The Beach - Calm Waves', 'Birth Of A New Era - PsychCloned', 'Timeless Lament - The Restful Moment', 'Safety - N.E. Thing', 'Sentient - Gruber', 'You Better Run! (Villains Theme) - Dirty Mitts'];
     default:
       return [];
   }
@@ -222,17 +201,17 @@ function getSongsForCard(cardId) {
 function getGenreTitle(cardId) {
   switch (cardId) {
     case '0':
-      return 'Pop Songs:';
+      return 'Techno:';
     case '1':
-      return 'Rock Songs:';
+      return 'Rap:';
     case '2':
-      return 'Hip Hop Songs:';
+      return 'Cachengue:';
     case '3':
-      return 'Electronic Songs:';
+      return 'Lo-Fi:';
     case '4':
-      return 'Reggae Songs:';
+      return 'Rock:';
     case '5':
-      return 'Jazz Songs:';
+      return 'Alternative:';
     default:
       return '';
   }
@@ -247,3 +226,78 @@ function updateYTracker(selectedCards) {
     yTracker.textContent = '';
   }
 }
+
+function addModToCard(cardId, mod) {
+  const card = document.querySelector(`[data-card-id="${cardId}"]`);
+  if (card) {
+    card.classList.add(mod);
+  }
+}
+
+function removeModFromCard(cardId, mod) {
+  const card = document.querySelector(`[data-card-id="${cardId}"]`);
+  if (card) {
+    card.classList.remove(mod);
+  }
+}
+
+function toggleModOnCard(cardId, mod) {
+  const card = document.querySelector(`[data-card-id="${cardId}"]`);
+  if (card) {
+    card.classList.toggle(mod);
+  }
+}
+
+function addModToCards(mod) {
+  cards.forEach(card => {
+    card.classList.add(mod);
+  });
+}
+
+function removeModFromCards(mod) {
+  cards.forEach(card => {
+    card.classList.remove(mod);
+  });
+}
+
+function toggleModOnCards(mod) {
+  cards.forEach(card => {
+    card.classList.toggle(mod);
+  });
+}
+
+function getImage(cardId) {
+  switch (cardId) {
+    case '0':
+      return '/Images/Cover.png';
+    case '1':
+      return 'ruta_imagen_1.png';
+    case '2':
+      return 'ruta_imagen_2.png';
+    case '3':
+      return 'ruta_imagen_3.png';
+    case '4':
+      return 'ruta_imagen_4.png';
+    case '5':
+      return 'ruta_imagen_5.png';
+    default:
+      return '';
+  }
+}
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+$('.txt').html(function(i, html) {
+  var chars = $.trim(html).split("");
+
+  return '<span>' + chars.join('</span><span>') + '</span>';
+});
