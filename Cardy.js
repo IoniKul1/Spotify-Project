@@ -174,10 +174,6 @@ function showSongs(cardId) {
   songListContainer.appendChild(songList);
 }
 
-function hideSongs() {
-  const songListContainer = document.getElementById('song-list-container');
-  songListContainer.innerHTML = '';
-}
 
 function getSongsForCard(cardId) {
   switch (cardId) {
@@ -194,7 +190,7 @@ function getSongsForCard(cardId) {
     case '5':
       return ['Heartless - 1800 Moe, James Perry', 'Remedy - Ret', 'Gentle Rainfall - Weston Brown', 'Fly - Paradise Circus', 'By The Beach - Calm Waves', 'Birth Of A New Era - PsychCloned', 'Timeless Lament - The Restful Moment', 'Safety - N.E. Thing', 'Sentient - Gruber', 'You Better Run! (Villains Theme) - Dirty Mitts'];
     default:
-      return [];
+      return ['Secrets - Hux & Thin, Galo Azin', 'Lemonade - Niko The Kid', 'Organ Belta - Jamie Roy', 'Singularity - WLAD Remix - Sidney Charles', 'Spanish Mode - Paskman', 'Chit Chat - Milion (NL)', 'Bring A Friend - Hood Rich', 'What Is This - James Dexter', 'Instate - Original Mix - Rich NxT', 'Rotate - Benjermain'];
   }
 }
 
