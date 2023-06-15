@@ -262,25 +262,6 @@ function toggleModOnCards(mod) {
   });
 }
 
-function getImage(cardId) {
-  switch (cardId) {
-    case '0':
-      return '/Images/Cover.png';
-    case '1':
-      return 'ruta_imagen_1.png';
-    case '2':
-      return 'ruta_imagen_2.png';
-    case '3':
-      return 'ruta_imagen_3.png';
-    case '4':
-      return 'ruta_imagen_4.png';
-    case '5':
-      return 'ruta_imagen_5.png';
-    default:
-      return '';
-  }
-}
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -298,3 +279,46 @@ $('.txt').html(function(i, html) {
   return '<span>' + chars.join('</span><span>') + '</span>';
 });
 
+// Añade esta función al código existente
+function playSong(songUrl) {
+  // Aquí puedes implementar la lógica para reproducir la canción utilizando la URL proporcionada
+  // Por ejemplo, podrías crear un elemento de audio y establecer la URL como fuente
+  const audioElement = document.createElement('audio');
+  audioElement.src = songUrl;
+  audioElement.play();
+}
+
+// Añade este evento al código existente para controlar el clic en cada canción
+songList.addEventListener('click', event => {
+  if (event.target.nodeName === 'LI') {
+    const songUrl = event.target.dataset.songUrl;
+    playSong(songUrl);
+  }
+});
+
+// Modifica la función showSongs para incluir la URL de cada canción en el elemento de lista correspondiente
+function showSongs(cardId) {
+  const songs = getSongsForCard(cardId);
+
+  const songListContainer = document.getElementById('song-list-container');
+  songListContainer.innerHTML = '';
+
+  const songList = document.createElement('ul');
+  songs.forEach((song, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = song;
+    listItem.dataset.songUrl = songs[song]; // Asigna la URL de la canción al atributo de datos "songUrl"
+    songList.appendChild(listItem);
+
+    // Añade una línea horizontal entre cada canción excepto la última
+    if (index < songs.length - 1) {
+      const horizontalLine = document.createElement('hr');
+      songList.appendChild(horizontalLine);
+    }
+  });
+
+  const genreTitle = document.createElement('h2');
+  genreTitle.textContent = getGenreTitle(cardId);
+  songListContainer.appendChild(genreTitle);
+  songListContainer.appendChild(songList);
+}
