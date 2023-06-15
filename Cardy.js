@@ -340,25 +340,6 @@ function toggleModOnCards(mod) {
   });
 }
 
-function getImage(cardId) {
-  switch (cardId) {
-    case '0':
-      return '/Images/Cover.png';
-    case '1':
-      return 'ruta_imagen_1.png';
-    case '2':
-      return 'ruta_imagen_2.png';
-    case '3':
-      return 'ruta_imagen_3.png';
-    case '4':
-      return 'ruta_imagen_4.png';
-    case '5':
-      return 'ruta_imagen_5.png';
-    default:
-      return '';
-  }
-}
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
@@ -376,6 +357,7 @@ $('.txt').html(function(i, html) {
   return '<span>' + chars.join('</span><span>') + '</span>';
 });
 
+<<<<<<< Updated upstream
 // Añade esta función al código existente
 function playSong(songUrl) {
   // Aquí puedes implementar la lógica para reproducir la canción utilizando la URL proporcionada
@@ -419,3 +401,120 @@ function showSongs(cardId) {
   songListContainer.appendChild(genreTitle);
   songListContainer.appendChild(songList);
 }
+=======
+
+var welcomeDiv = document.getElementById("welcome");
+    var questionDiv = document.getElementById("question");
+    var resultText = document.getElementById("resultText");
+    var resultDiv = document.getElementById("result");
+    var currentQuestion = 1;
+    var totalQuestions = 5; // Número total de preguntas
+    var answers = [];
+
+    function startExperiment() {
+      welcomeDiv.style.opacity = 0;
+      welcomeDiv.style.transform = "translateY(-20px)";
+
+      setTimeout(function() {
+        welcomeDiv.style.display = "none";
+        showQuestion(currentQuestion);
+      }, 500); // Espera 500ms antes de mostrar la primera pregunta
+    }
+
+    var questions = [
+  {
+    question: "How often do you skip songs?",
+    options: ["Rarely", "Sometimes", "Frequently"]
+  },
+  {
+    question: "Question 2: Another question",
+    options: ["Option 1", "Option 2", "Option 3"]
+  },
+  {
+    question: "Question 2: Another question",
+    options: ["Option 1", "Option 2", "Option 3"]
+  },
+  {
+    question: "Question 2: Another question",
+    options: ["Option 1", "Option 2", "Option 3"]
+  },
+  {
+    question: "Question 2: Another question",
+    options: ["Option 1", "Option 2", "Option 3"]
+  }
+];
+
+    function saveAnswer(answer) {
+      questionDiv.style.opacity = 0;
+      questionDiv.style.transform = "translateY(20px)";
+
+      setTimeout(function() {
+        answers.push(answer);
+
+        if (currentQuestion < totalQuestions) {
+          currentQuestion++;
+          showQuestion(currentQuestion);
+        } else {
+          showResult();
+        }
+      }, 500); // Espera 500ms antes de continuar con la siguiente pregunta
+    }
+
+    function showQuestion(questionNumber) {
+  var currentQuestionObj = questions[questionNumber - 1]; // Restamos 1 porque los índices del array comienzan en 0
+  questionDiv.innerHTML = "Question " + questionNumber + ": " + currentQuestionObj.question;
+  questionDiv.style.opacity = 1;
+  questionDiv.style.transform = "translateY(0)";
+
+  var options = `
+    <div class="options-container">
+  `;
+
+  for (var i = 0; i < currentQuestionObj.options.length; i++) {
+    options += `<button class="option" onclick="saveAnswer(${i + 1})">${currentQuestionObj.options[i]}</button>`;
+  }
+
+  options += `</div>`;
+
+  setTimeout(function() {
+    questionDiv.innerHTML += options;
+
+    var optionsContainer = document.getElementsByClassName("options-container")[0];
+    optionsContainer.style.opacity = 1;
+    optionsContainer.style.transform = "translateY(0)";
+  }, 500); // Espera 500ms antes de mostrar las opciones
+}
+
+
+    function showResult() {
+      var score = calculateScore();
+      resultText.innerHTML = "Your Spotify is " + score + "!";
+      questionDiv.style.opacity = 0;
+      questionDiv.style.transform = "translateY(20px)";
+
+      setTimeout(function() {
+        questionDiv.style.display = "none";
+        resultDiv.style.opacity = 1;
+        resultDiv.style.transform = "translateY(0)";
+      }, 500); // Espera 500ms antes de mostrar el resultado
+    }
+
+    function calculateScore() {
+      // Calcula el puntaje total según las respuestas
+      var total = answers.reduce(function(sum, answer) {
+        return sum + answer;
+      }, 0);
+
+      var average = total / totalQuestions;
+
+      if (average <= 1) {
+        return "Amazing";
+      } else if (average <= 2) {
+        return "Good";
+      } else if (average <= 3) {
+        return "Average";
+      } else {
+        return "Bad";
+      }
+    }
+>>>>>>> Stashed changes
