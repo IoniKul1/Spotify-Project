@@ -178,21 +178,99 @@ function showSongs(cardId) {
 function getSongsForCard(cardId) {
   switch (cardId) {
     case '0':
-      return ['Secrets - Hux & Thin, Galo Azin', 'Lemonade - Niko The Kid', 'Organ Belta - Jamie Roy', 'Singularity - WLAD Remix - Sidney Charles', 'Spanish Mode - Paskman', 'Chit Chat - Milion (NL)', 'Bring A Friend - Hood Rich', 'What Is This - James Dexter', 'Instate - Original Mix - Rich NxT', 'Rotate - Benjermain'];
+      return {
+        'Secrets - Hux & Thin, Galo Azin': 'link1.mp3',
+        'Lemonade - Niko The Kid': 'link2.mp3',
+        'Organ Belta - Jamie Roy': 'link3.mp3',
+        'Singularity - WLAD Remix - Sidney Charles': 'link4.mp3',
+        'Spanish Mode - Paskman': 'link5.mp3',
+        'Chit Chat - Milion (NL)': 'link6.mp3',
+        'Bring A Friend - Hood Rich': 'link7.mp3',
+        'What Is This - James Dexter': 'link8.mp3',
+        'Instate - Original Mix - Rich NxT': 'link9.mp3',
+        'Rotate - Benjermain': 'link10.mp3'
+      };
     case '1':
-      return ['RNP - Cordae, Anderson .Paak', 'Rain Man - Eminem', 'Congratulations (feat. Bilal) - Mac Miller, Bilal', 'Mr. Rager - Kid Cudi', 'No Role Modelz - J. Cole', 'The Real Slim Shady - Eminem', 'Without Me - Eminem', 'Mockingbird - Eminem', 'Superman - Eminem, Dina Rae', 'Maytag (Tax Free) - Ben Reilly'];
+      return {
+        'RNP - Cordae, Anderson .Paak': 'link11.mp3',
+        'Rain Man - Eminem': 'link12.mp3',
+        'Congratulations (feat. Bilal) - Mac Miller, Bilal': 'link13.mp3',
+        'Mr. Rager - Kid Cudi': 'link14.mp3',
+        'No Role Modelz - J. Cole': 'link15.mp3',
+        'The Real Slim Shady - Eminem': 'link16.mp3',
+        'Without Me - Eminem': 'link17.mp3',
+        'Mockingbird - Eminem': 'link18.mp3',
+        'Superman - Eminem, Dina Rae': 'link19.mp3',
+        'Maytag (Tax Free) - Ben Reilly': 'link20.mp3'
+      };
     case '2':
-      return ['M.A - Remix - BM, Callejero Fino, La Joaqui', 'Un Finde - Remix - Maty Deejay, DJ Roma', 'DISCOTEKA - The La Planta, BM, Alejo Isakk', 'Un X100To - Remix - Emmi Dj', 'Pobre Corazón - Ke Personajes, Onda Sabanera', 'En La Intimidad - Remix - Tomy DJ, El Kaio', 'Jagger.mp3 - Remix - Tomy DJ', 'Los del Espacio - Tiago PZK, Duki, Emilia, (...)', 'Disfruto - Ke Personajes', 'Vida Gangster - Remix - Tomy DJ'];
+      return {
+        'M.A - Remix - BM, Callejero Fino, La Joaqui': 'link21.mp3',
+        'Un Finde - Remix - Maty Deejay, DJ Roma': 'link22.mp3',
+        'DISCOTEKA - The La Planta, BM, Alejo Isakk': 'link23.mp3',
+        'Un X100To - Remix - Emmi Dj': 'link24.mp3',
+        'Pobre Corazón - Ke Personajes, Onda Sabanera': 'link25.mp3',
+        'En La Intimidad - Remix - Tomy DJ, El Kaio': 'link26.mp3',
+        'Jagger.mp3 - Remix - Tomy DJ': 'link27.mp3',
+        'Los del Espacio - Tiago PZK, Duki, Emilia, (...)': 'link28.mp3',
+        'Disfruto - Ke Personajes': 'link29.mp3',
+        'Vida Gangster - Remix - Tomy DJ': 'link30.mp3'
+      };
     case '3':
-      return ['Glowing Lights - No Spirit', 'Fireflies - Kanisan, frad', 'Recharge - Yasumu', 'Floating Island - Dimension 32', 'Plume - Dimension 32, Hevi', 'Epilogue - mell-ø, Ambulo', 'A Wave In The Ocean - Laffey', 'Skipping Rocks - Laffey', 'C U in Class! - Flovry, tender spring', 'Lilac - Kainbeats'];
+      return {
+        'Glowing Lights - No Spirit': 'link31.mp3',
+        'Fireflies - Kanisan, frad': 'link32.mp3',
+        'Recharge - Yasumu': 'link33.mp3',
+        'Floating Island - Dimension 32': 'link34.mp3',
+        'Plume - Dimension 32, Hevi': 'link35.mp3',
+        'Epilogue - mell-ø, Ambulo': 'link36.mp3',
+        'A Wave In The Ocean - Laffey': 'link37.mp3',
+        'Skipping Rocks - Laffey': 'link38.mp3',
+        'C U in Class! - Flovry, tender spring': 'link39.mp3',
+        'Lilac - Kainbeats': 'link40.mp3'
+      };
     case '4':
-      return ['You Shook Me All Night Long - AC/DC', "Welcome To The Jungle - Guns N' Roses", 'Pour Some Sugar On Me - Def Leppard', 'Jump - 2015 Remaster - Van Halen', 'Another One Bites The Dust - Queen', 'Every Breath You Take - The Police', 'Should I Stay or Should I Go - The Clash', "Livin' On A Prayer - Bon Jovi", "I Was Made For Lovin' You - KISS", 'Rock You Like A Hurricane - Scorpions'];
+      return {
+        'You Shook Me All Night Long - AC/DC': 'link41.mp3',
+        "Welcome To The Jungle - Guns N' Roses": 'link42.mp3',
+        'Pour Some Sugar On Me - Def Leppard': 'link43.mp3',
+        'Jump - 2015 Remaster - Van Halen': 'link44.mp3',
+        'Another One Bites The Dust - Queen': 'link45.mp3',
+        'Every Breath You Take - The Police': 'link46.mp3',
+        'Should I Stay or Should I Go - The Clash': 'link47.mp3',
+        "Livin' On A Prayer - Bon Jovi": 'link48.mp3',
+        "I Was Made For Lovin' You - KISS": 'link49.mp3',
+        'Rock You Like A Hurricane - Scorpions': 'link50.mp3'
+      };
     case '5':
-      return ['Heartless - 1800 Moe, James Perry', 'Remedy - Ret', 'Gentle Rainfall - Weston Brown', 'Fly - Paradise Circus', 'By The Beach - Calm Waves', 'Birth Of A New Era - PsychCloned', 'Timeless Lament - The Restful Moment', 'Safety - N.E. Thing', 'Sentient - Gruber', 'You Better Run! (Villains Theme) - Dirty Mitts'];
+      return {
+        'Heartless - 1800 Moe, James Perry': 'link51.mp3',
+        'Remedy - Ret': 'link52.mp3',
+        'Gentle Rainfall - Weston Brown': 'link53.mp3',
+        'Fly - Paradise Circus': 'link54.mp3',
+        'By The Beach - Calm Waves': 'link55.mp3',
+        'Birth Of A New Era - PsychCloned': 'link56.mp3',
+        'Timeless Lament - The Restful Moment': 'link57.mp3',
+        'Safety - N.E. Thing': 'link58.mp3',
+        'Sentient - Gruber': 'link59.mp3',
+        'You Better Run! (Villains Theme) - Dirty Mitts': 'link60.mp3'
+      };
     default:
-      return ['Secrets - Hux & Thin, Galo Azin', 'Lemonade - Niko The Kid', 'Organ Belta - Jamie Roy', 'Singularity - WLAD Remix - Sidney Charles', 'Spanish Mode - Paskman', 'Chit Chat - Milion (NL)', 'Bring A Friend - Hood Rich', 'What Is This - James Dexter', 'Instate - Original Mix - Rich NxT', 'Rotate - Benjermain'];
+      return {
+        'Secrets - Hux & Thin, Galo Azin': 'link1.mp3',
+        'Lemonade - Niko The Kid': 'link2.mp3',
+        'Organ Belta - Jamie Roy': 'link3.mp3',
+        'Singularity - WLAD Remix - Sidney Charles': 'link4.mp3',
+        'Spanish Mode - Paskman': 'link5.mp3',
+        'Chit Chat - Milion (NL)': 'link6.mp3',
+        'Bring A Friend - Hood Rich': 'link7.mp3',
+        'What Is This - James Dexter': 'link8.mp3',
+        'Instate - Original Mix - Rich NxT': 'link9.mp3',
+        'Rotate - Benjermain': 'link10.mp3'
+      };
   }
 }
+
 
 function getGenreTitle(cardId) {
   switch (cardId) {
@@ -298,3 +376,46 @@ $('.txt').html(function(i, html) {
   return '<span>' + chars.join('</span><span>') + '</span>';
 });
 
+// Añade esta función al código existente
+function playSong(songUrl) {
+  // Aquí puedes implementar la lógica para reproducir la canción utilizando la URL proporcionada
+  // Por ejemplo, podrías crear un elemento de audio y establecer la URL como fuente
+  const audioElement = document.createElement('audio');
+  audioElement.src = songUrl;
+  audioElement.play();
+}
+
+// Añade este evento al código existente para controlar el clic en cada canción
+songList.addEventListener('click', event => {
+  if (event.target.nodeName === 'LI') {
+    const songUrl = event.target.dataset.songUrl;
+    playSong(songUrl);
+  }
+});
+
+// Modifica la función showSongs para incluir la URL de cada canción en el elemento de lista correspondiente
+function showSongs(cardId) {
+  const songs = getSongsForCard(cardId);
+
+  const songListContainer = document.getElementById('song-list-container');
+  songListContainer.innerHTML = '';
+
+  const songList = document.createElement('ul');
+  songs.forEach((song, index) => {
+    const listItem = document.createElement('li');
+    listItem.textContent = song;
+    listItem.dataset.songUrl = songs[song]; // Asigna la URL de la canción al atributo de datos "songUrl"
+    songList.appendChild(listItem);
+
+    // Añade una línea horizontal entre cada canción excepto la última
+    if (index < songs.length - 1) {
+      const horizontalLine = document.createElement('hr');
+      songList.appendChild(horizontalLine);
+    }
+  });
+
+  const genreTitle = document.createElement('h2');
+  genreTitle.textContent = getGenreTitle(cardId);
+  songListContainer.appendChild(genreTitle);
+  songListContainer.appendChild(songList);
+}
