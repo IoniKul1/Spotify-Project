@@ -231,7 +231,7 @@ function getResultText() {
       else if (song === "No Role Modelz - J. Cole" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
       return "After Party - Don Toliver";
     } else if (song === "No Role Modelz - J. Cole" && song_2 === "It Was A Good Day - Ice Cube") {
-      return "Superman -mEminem, Dina Rae";
+      return "Superman - Eminem, Dina Rae";
     } else if (song === "No Role Modelz - J. Cole" && song_2 === "WHATS POPPIN - Jack Harlow") {
       return "Drip Too Hard (Lil Baby & Gunna) - Lil Baby, Gunna";
     }

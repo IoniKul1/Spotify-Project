@@ -196,15 +196,15 @@ html {
 
   .card h1{
       margin-top: 5%;
-      color: rgb(0, 0, 0);
+      color: rgb(241 243 244);
       font-size: xx-large;
   }
 
   .card h2{
-      color: rgb(0, 0, 0);
+      color:rgb(241 243 244);
   }
   .card h3{
-      color: rgb(0, 0, 0);
+      color:rgb(241 243 244);;
   }
   .choices {
     display: flex;
