@@ -52,17 +52,17 @@ function showQuestion3() {
   document.getElementById("question2").classList.add("hidden");
   document.getElementById("question3").classList.remove("hidden");
   if (genre === "Techno") {
-    document.getElementById("song_2Button1").innerText = "Losing Fisher";
-    document.getElementById("song_2Button2").innerText = "Consciousness Avantgarde";
-    document.getElementById("song_2Button3").innerText = "Love Shouse)";
+    document.getElementById("song_2Button1").innerText = "Soul Sacrifice - Dombresky";
+    document.getElementById("song_2Button2").innerText = "Friends - Solomun";
+    document.getElementById("song_2Button3").innerText = "Shooting Arrows - Lane 8, POLIÇA, Matt Fax";
   } else if (genre === "Cachengue") {
-    document.getElementById("song_2Button1").innerText = "M.A Joaqui";
-    document.getElementById("song_2Button2").innerText = "Los Duki";
-    document.getElementById("song_2Button3").innerText = "PUNTO Quevedo";
+    document.getElementById("song_2Button1").innerText = "qué le pasa conmigo? - Nicki Nicole, Rels B";
+    document.getElementById("song_2Button2").innerText = "BESO - ROSALÍA, Rauw Alejandro";
+    document.getElementById("song_2Button3").innerText = "Quiero Creer - Luck Ra, La T y La M, Rusherking";
   } else if (genre === "Rap") {
-    document.getElementById("song_2Button1").innerText = "RNP Paak)";
-    document.getElementById("song_2Button2").innerText = "The Eminem";
-    document.getElementById("song_2Button3").innerText = "No Cole";
+    document.getElementById("song_2Button1").innerText = "WHATS POPPIN - Jack Harlow";
+    document.getElementById("song_2Button2").innerText = "It Was A Good Day - Ice Cube";
+    document.getElementById("song_2Button3").innerText = "XO Tour Llif3 - Lil Uzi Vert";
   }
 }
 
@@ -129,27 +129,27 @@ function getSongOption(option) {
 function getSongOption_2(option) {
   if (genre === "Techno") {
     if (option === 1) {
-      return "Losing Fisher";
+      return "Soul Sacrifice - Dombresky";
     } else if (option === 2) {
-      return "Consciousness Avantgarde";
+      return "Friends - Solomun";
     } else if (option === 3) {
-      return "Love Shouse)";
+      return "Shooting Arrows - Lane 8, POLIÇA, Matt Fax";
     }
   } else if (genre === "Cachengue") {
     if (option === 1) {
-      return "M.A Joaqui";
+      return "qué le pasa conmigo? - Nicki Nicole, Rels B";
     } else if (option === 2) {
-      return "Los Duki";
+      return "BESO - ROSALÍA, Rauw Alejandro";
     } else if (option === 3) {
-      return "PUNTO Quevedo";
+      return "Quiero Creer - Luck Ra, La T y La M, Rusherking";
     }
   } else if (genre === "Rap") {
     if (option === 1) {
-      return  "RNP Paak)";
+      return  "WHATS POPPIN - Jack Harlow";
     } else if (option === 2) {
-      return "The Eminem";
+      return "It Was A Good Day - Ice Cube";
     } else if (option === 3) {
-      return "No Cole";
+      return "XO Tour Llif3 - Lil Uzi Vert";
     }
   }
 }
@@ -169,71 +169,71 @@ function showResult() {
 
 function getResultText() {
   if (genre === "Techno") {
-    if (song === "Losing It - Fisher" && song_2 === "Losing Fisher") {
-      return "March of the forest cat";
-    } else if (song === "Losing It - Fisher" && song_2 === "Consciousness Avantgarde") {
-      return "March of the forest cat_2";
-    } else if (song === "Losing It - Fisher" && song_2 === "Love Shouse)") {
-      return "March of the forest cat_3";
+    if (song === "Losing It - Fisher" && song_2 === "Soul Sacrifice - Dombresky") {
+      return "Heads Will Roll - Remix - DJ In2ition";
+    } else if (song === "Losing It - Fisher" && song_2 === "Friends - Solomun") {
+      return "The Groovy Cat - PAWSA";
+    } else if (song === "Losing It - Fisher" && song_2 === "Shooting Arrows - Lane 8, POLIÇA, Matt Fax") {
+      return "Maybe Not - Jan Blomqvist";
     } 
-    else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Consciousness Avantgarde") {
-      return "Blind light";
-    } else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Losing Fisher") {
-      return "Blind light_2";
-    } else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Love Shouse)") {
-      return "Blind light_3";
+    else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Friends - Solomun") {
+      return "Floyd - Avoure";
+    } else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Soul Sacrifice - Dombresky") {
+      return "Pump It Up - Endor";
+    } else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Shooting Arrows - Lane 8, POLIÇA, Matt Fax") {
+      return "Lie Alone - 16BL Remix - L. Doblado";
     } 
-      else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Love Shouse)") {
-      return "Childs";
-    } else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Consciousness Avantgarde") {
-      return "Childs_2";
-    } else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Losing Fisher") {
-      return "Childs_3";
+      else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Shooting Arrows - Lane 8, POLIÇA, Matt Fax") {
+      return "Is This Our Earth? - Lane 8";
+    } else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Friends - Solomun") {
+      return "Silence - Kidnap";
+    } else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Soul Sacrifice - Dombresky") {
+      return "March of the Forest Cat - Lane 8";
     } 
   } else if (genre === "Cachengue") {
-    if (song === "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "M.A Joaqui") {
-      return "Espacio";
-    } else if (song ===  "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "Los Duki") {
-      return "Espacio_2";
-    } else if (song ===  "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "PUNTO Quevedo") {
-      return "Espacio_3";
+    if (song === "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "qué le pasa conmigo? - Nicki Nicole, Rels B") {
+      return "Yandel 150 - Yandel, Feid";
+    } else if (song ===  "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "BESO - ROSALÍA, Rauw Alejandro") {
+      return "Hey Mor - Ozuna, Feid";
+    } else if (song ===  "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "Quiero Creer - Luck Ra, La T y La M, Rusherking") {
+      return "Muñecas - TINI, La Joaqui, Steve Aoki";
     } 
-      else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "Los Duki") {
-      return "nose.mp3";
-    } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "M.A Joaqui") {
-      return "nose.mp3_2";
-    } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "PUNTO Quevedo") {
-      return "nose.mp3_3";
+      else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "BESO - ROSALÍA, Rauw Alejandro") {
+      return "Luck Ra | Mission 15 - Alan Gomez, Luck Ra";
+    } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "qué le pasa conmigo? - Nicki Nicole, Rels B") {
+      return "DISCOTEKA (feat. Locura Mix) - The La Planta, BM, Alejo Isakk, Locura Mix";
+    } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "Quiero Creer - Luck Ra, La T y La M, Rusherking") {
+      return "En La Intimidad - Remix - Tomy DJ, DJ Pirata, El Kaio";
     } 
-      else if (song === "PUNTO G - Quevedo" && song_2 === "PUNTO Quevedo") {
-      return "Tumbando el club";
-    } else if (song === "PUNTO G - Quevedo" && song_2 === "Los Duki") {
-      return "Tumbando el club_2";
-    } else if (song === "PUNTO G - Quevedo" && song_2 === "M.A Joaqui") {
-      return "Tumbando el club_3";
+      else if (song === "PUNTO G - Quevedo" && song_2 === "Quiero Creer - Luck Ra, La T y La M, Rusherking") {
+      return "Ya No Vuelvas (Versión Cuarteto) - Luck Ra, La K'onga, Ke Personajes";
+    } else if (song === "PUNTO G - Quevedo" && song_2 === "BESO - ROSALÍA, Rauw Alejandro") {
+      return "DISPARA *** - Nicki Nicole, Milo j";
+    } else if (song === "PUNTO G - Quevedo" && song_2 === "qué le pasa conmigo? - Nicki Nicole, Rels B") {
+      return "Feliz Cumpleaños Ferxxo - Feid";
     }
 
   } else if (genre === "Rap") {
-    if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "RNP Paak)") {
-      return "No role modelz";
-    } else if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "The Eminem") {
-      return "No role modelz_2";
-    } else if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "No Cole") {
-      return "No role modelz_3";
+    if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "WHATS POPPIN - Jack Harlow") {
+      return "Sky - Playboi Carti";
+    } else if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "It Was A Good Day - Ice Cube") {
+      return "Yes Indeed - Lil Baby, Drake";
+    } else if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
+      return "Dior - Pop Smoke";
     }
-    else if (song === "The Real Slim Shady - Eminem" && song_2 === "The Eminem") {
-      return "Stupidity";
-    } else if (song === "The Real Slim Shady - Eminem" && song_2 === "RNP Paak)") {
-      return "Stupidity_2";
-    } else if (song === "The Real Slim Shady - Eminem" && song_2 === "No Cole") {
-      return "Stupidity_3";
+    else if (song === "The Real Slim Shady - Eminem" && song_2 === "It Was A Good Day - Ice Cube") {
+      return "Life Is Good (feat. Drake) - Future, Drake";
+    } else if (song === "The Real Slim Shady - Eminem" && song_2 === "WHATS POPPIN - Jack Harlow") {
+      return "20 Min - Lil Uzi Vert";
+    } else if (song === "The Real Slim Shady - Eminem" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
+      return "SICKO MODE - Travis Scott";
     }
-      else if (song === "No Role Modelz - J. Cole" && song_2 === "No Cole") {
-      return "Curtain call";
-    } else if (song === "No Role Modelz - J. Cole" && song_2 === "The Eminem") {
-      return "Curtain call_2";
-    } else if (song === "No Role Modelz - J. Cole" && song_2 === "RNP Paak)") {
-      return "Curtain call_3";
+      else if (song === "No Role Modelz - J. Cole" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
+      return "After Party - Don Toliver";
+    } else if (song === "No Role Modelz - J. Cole" && song_2 === "It Was A Good Day - Ice Cube") {
+      return "Superman -mEminem, Dina Rae";
+    } else if (song === "No Role Modelz - J. Cole" && song_2 === "WHATS POPPIN - Jack Harlow") {
+      return "Drip Too Hard (Lil Baby & Gunna) - Lil Baby, Gunna";
     }
   }
 }

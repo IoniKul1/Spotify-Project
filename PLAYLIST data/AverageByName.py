@@ -1,8 +1,6 @@
 import pandas as pd
-
 # Cargar el archivo CSV
-data = pd.read_csv('RapGlobal.csv')
-
+data = pd.read_csv('/Users/ionikullock/Desktop/TD_IV/Trabajo Practico /Spotify-Project/PLAYLIST data/RapGlobal.csv')
 # Aplicar las transformaciones a cada variable
 data['valence'] = data['valence'] * 100
 data['danceability'] = data['danceability'] * 100
