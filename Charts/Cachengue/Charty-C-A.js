@@ -22,7 +22,6 @@ const dataCA = {
     pointHoverBorderColor: 'rgb(240,230,140)'
   }],
 };
-
 const configCA = {
   type: 'radar',
   data: dataCA,
@@ -30,7 +29,12 @@ const configCA = {
     plugins: {
       legend: {
         labels: {
-          color: 'white'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+            size: 14,
+          }
+
         }
       }
     },
@@ -40,17 +44,26 @@ const configCA = {
           color: 'transparent'
         },
         grid: {
-          color: 'white'
+          color: 'black'
         },
         pointLabels: {
-          color: 'white'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+            size: 14,
+          }
         },
         ticks: {
-          color: 'black'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+
+          }
         },
       }
     }
   }
 };
+
 
 const radarChartCA = new Chart(document.getElementById('C-A'), configCA);

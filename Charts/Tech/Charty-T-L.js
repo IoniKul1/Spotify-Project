@@ -30,7 +30,12 @@ const configTL = {
     plugins: {
       legend: {
         labels: {
-          color: 'white'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+            size: 14,
+          }
+
         }
       }
     },
@@ -40,17 +45,24 @@ const configTL = {
           color: 'transparent'
         },
         grid: {
-          color: 'white'
+          color: 'black'
         },
         pointLabels: {
-          color: 'white'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+            size: 14,
+          }
         },
         ticks: {
-          color: 'black'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+
+          }
         },
       }
     }
   }
 };
-
 const radarChartTL = new Chart(document.getElementById('T-L'), configTL);

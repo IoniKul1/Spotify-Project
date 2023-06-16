@@ -27,7 +27,7 @@ window.onload = function() {
 
     // Configurar los estilos de visualización
     canvasCtx.lineWidth = 2;
-    canvasCtx.strokeStyle = 'rgb(0, 255, 0)';
+    canvasCtx.strokeStyle = 'rgba(78, 130, 182)';
     canvasCtx.beginPath();
 
     var sliceWidth = canvas.width * 1.0 / bufferLength;

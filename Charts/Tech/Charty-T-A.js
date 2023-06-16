@@ -30,7 +30,12 @@ const configTA = {
     plugins: {
       legend: {
         labels: {
-          color: 'white'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+            size: 14,
+          }
+
         }
       }
     },
@@ -40,17 +45,23 @@ const configTA = {
           color: 'transparent'
         },
         grid: {
-          color: 'white'
+          color: 'black'
         },
         pointLabels: {
-          color: 'white'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+            size: 14,
+          }
         },
         ticks: {
-          color: 'black'
+          color: 'black',
+          font: {
+            family: 'Domine, serif',
+          }
         },
       }
     }
   }
 };
-
 const radarChartTA = new Chart(document.getElementById('T-A'), configTA);

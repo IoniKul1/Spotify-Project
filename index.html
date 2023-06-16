@@ -31,22 +31,28 @@
           <button class="songButton greenButton" id="songButton2"></button>
           <button class="songButton greenButton" id="songButton3"></button>
         </div>
+        <div id="question3" class="question hidden">
+            <h2>¿Qué otra canción elegirías entre estas opciones?</h2>
+            <button class="song_2Button greenButton" id="song_2Button1"></button>
+            <button class="song_2Button greenButton" id="song_2Button2"></button>
+            <button class="song_2Button greenButton" id="song_2Button3"></button>
+          </div>
         <div id="loading" class="hidden">
           <h2>Analizando algoritmo de Spotify...</h2>
           <div class="loader"></div>
         </div>
         <div id="result" class="hidden">
-          <h2>Resultado:</h2>
+          <h1>Resultado:</h1>
           <p id="selections"></p>
           <p id="resultText"></p>
         </div>
       </div>
-      <div class="container-icon">
-        <h2>Scrollear para conocer algoritmo </h2>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <span class="text">Scroll down</span>
+      <div class="container-icon" style="margin-top: 22%;">
+        <h2>Scrollear para conocer algoritmo que usa Spotify</h2>
+        <div class="chevron" style="margin-left: -20px;"></div>
+        <div class="chevron" style="margin-left: -20px;"></div>
+        <div class="chevron" style="margin-left: -20px;"></div>
+        
       </div>
     </div>
 
@@ -105,7 +111,7 @@
                         <div class="box">
                             <div class="tracker-id">
                             <h1 style="font-size: xx-large; margin-top: -4%;line-height: 20%;">Tracker ID</h1>
-                            <div id="song-list-container" style="font-size: 15px;"></div>
+                            <div id="song-list-container" style="font-size: 15px; color: black;"></div>
                             <div class="contenedor-musica">
                                 <canvas id="visualizer"></canvas>
                                 <audio id="audio" src="repro music/rnp-feat-anderson-paak-official-lyric-video.mp3" controls></audio>
