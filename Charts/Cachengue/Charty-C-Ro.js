@@ -1,5 +1,5 @@
 const dataCRo = {
-  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
+  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speechiness'],
   datasets: [{
     label: 'Cachengue',
     data: [67.59, 70.61000000000001, 67.03999999999999, 0.004240299999999999, 63.0, 9.41],
