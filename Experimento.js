@@ -131,35 +131,35 @@ document.getElementById("song_2Button3").addEventListener("click", function() {
 function getSongOption(option) {
   if (genre === "Techno") {
     if (option === 1) {
-      promedio = 54.91
+      promedio = 64.795
       return "Losing It - Fisher";
     } else if (option === 2) {
-      promedio = 54.91
+      promedio = 51.053
       return "Consciousness - Anyma, Avantgarde";
     } else if (option === 3) {
-      promedio = 54.91
+      promedio = 44.213
       return "Love Tonight (Edit) - Shouse";
     }
   } else if (genre === "Cachengue") {
     if (option === 1) {
-      promedio = 54.91
+      promedio = 52.050
       return "M.A (remix) - BM, Callejero Fino, La Joaqui";
     } else if (option === 2) {
-      promedio = 54.91
+      promedio = 50.986
       return "Los del espacio - LIT killah, Duki";
     } else if (option === 3) {
-      promedio = 54.91
+      promedio = 51.298
       return "PUNTO G - Quevedo";
     }
   } else if (genre === "Rap") {
     if (option === 1) {
-      promedio = 54.91
+      promedio = 58.316
       return  "RNP Cordae, (feat. Anderson .Paak)";
     } else if (option === 2) {
-      promedio = 54.91
+      promedio = 55.286
       return "The Real Slim Shady - Eminem";
     } else if (option === 3) {
-      promedio = 54.91
+      promedio = 49.233
       return "No Role Modelz - J. Cole";
     }
   }
@@ -168,35 +168,35 @@ function getSongOption(option) {
 function getSongOption_2(option) {
   if (genre === "Techno") {
     if (option === 1) {
-      promedio_2 = 54.92
+      promedio_2 = 63.036
       return "Soul Sacrifice - Dombresky";
     } else if (option === 2) {
-      promedio_2 = 54.92
+      promedio_2 = 50.610
       return "Friends - Solomun";
     } else if (option === 3) {
-      promedio_2 = 54.92
+      promedio_2 = 44.235
       return "Shooting Arrows - Lane 8, POLIÇA, Matt Fax";
     }
   } else if (genre === "Cachengue") {
     if (option === 1) {
-      promedio_2 = 54.92
+      promedio_2 = 50.091
       return "qué le pasa conmigo? - Nicki Nicole, Rels B";
     } else if (option === 2) {
-      promedio_2 = 54.92
+      promedio_2 = 50.647
       return "BESO - ROSALÍA, Rauw Alejandro";
     } else if (option === 3) {
-      promedio_2 = 54.92
+      promedio_2 = 51.298
       return "Quiero Creer - Luck Ra, La T y La M, Rusherking";
     }
   } else if (genre === "Rap") {
     if (option === 1) {
-      promedio_2 = 54.92
+      promedio_2 = 56.466
       return  "WHATS POPPIN - Jack Harlow";
     } else if (option === 2) {
-      promedio_2 = 54.92
+      promedio_2 = 55.365
       return "It Was A Good Day - Ice Cube";
     } else if (option === 3) {
-      promedio_2 = 54.92
+      promedio_2 = 49.233
       return "XO Tour Llif3 - Lil Uzi Vert";
     }
   }
@@ -222,120 +222,120 @@ function showResult() {
 function getResultText() {
   if (genre === "Techno") {
     if (song === "Losing It - Fisher" && song_2 === "Soul Sacrifice - Dombresky") {
-      promedio_3 = 54.92
+      promedio_3 = 63.698
       result = "Heads Will Roll - Remix - DJ In2ition";
       return result;
     } else if (song === "Losing It - Fisher" && song_2 === "Friends - Solomun") {
-      promedio_3 = 54.92
+      promedio_3 = 56.440
       result = "The Groovy Cat - PAWSA";
       return result;
     } else if (song === "Losing It - Fisher" && song_2 === "Shooting Arrows - Lane 8, POLIÇA, Matt Fax") {
-      promedio_3 = 54.92
+      promedio_3 = 54.434
       result = "Maybe Not - Jan Blomqvist";
       return result;
     } 
     else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Friends - Solomun") {
-      promedio_3 = 54.92
+      promedio_3 = 50.353
       result = "Floyd - Avoure";
       return result;
     } else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Soul Sacrifice - Dombresky") {
-      promedio_3 = 54.92
+      promedio_3 = 56.654
       result = "Pump It Up - Endor";
       return result;
     } else if (song === "Consciousness - Anyma, Avantgarde"  && song_2 === "Shooting Arrows - Lane 8, POLIÇA, Matt Fax") {
-      promedio_3 = 54.92
+      promedio_3 = 47.712
       result = "Lie Alone - 16BL Remix - L. Doblado";
       return result;
     } 
       else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Shooting Arrows - Lane 8, POLIÇA, Matt Fax") {
-      promedio_3 = 54.92
+      promedio_3 = 44.541
       result = "Is This Our Earth? - Lane 8";
       return result;
     } else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Friends - Solomun") {
-      promedio_3 = 54.92
+      promedio_3 = 47.418
       result = "Silence - Kidnap";
       return result;
     } else if (song === "Love Tonight (Edit) - Shouse" && song_2 === "Soul Sacrifice - Dombresky") {
-      promedio_3 = 54.92
+      promedio_3 = 53.616
       result = "March of the Forest Cat - Lane 8";
       return result;
     } 
   } else if (genre === "Cachengue") {
     if (song === "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "qué le pasa conmigo? - Nicki Nicole, Rels B") {
-      promedio_3 = 54.92
+      promedio_3 = 51.022
       result = "Yandel 150 - Yandel, Feid";
       return result;
     } else if (song ===  "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "BESO - ROSALÍA, Rauw Alejandro") {
-      promedio_3 = 54.92
+      promedio_3 = 51.470
       result = "Hey Mor - Ozuna, Feid";
       return result;
     } else if (song ===  "M.A (remix) - BM, Callejero Fino, La Joaqui" && song_2 === "Quiero Creer - Luck Ra, La T y La M, Rusherking") {
-      promedio_3 = 54.92
+      promedio_3 = 51.343
       result = "Muñecas - TINI, La Joaqui, Steve Aoki";
       return result;
     } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "BESO - ROSALÍA, Rauw Alejandro") {
-      promedio_3 = 54.92
+      promedio_3 = 51.026
       result = "Luck Ra | Mission 15 - Alan Gomez, Luck Ra";
       return result;
     } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "qué le pasa conmigo? - Nicki Nicole, Rels B") {
-      promedio_3 = 54.92
+      promedio_3 = 50.600
       result = "DISCOTEKA (feat. Locura Mix) - The La Planta, BM, Alejo Isakk, Locura Mix";
       return result;
     } else if (song === "Los del espacio - LIT killah, Duki" && song_2 === "Quiero Creer - Luck Ra, La T y La M, Rusherking") {
-      promedio_3 = 54.92
+      promedio_3 = 50.266
       result = "En La Intimidad - Remix - Tomy DJ, DJ Pirata, El Kaio";
       return result;
     } 
       else if (song === "PUNTO G - Quevedo" && song_2 === "Quiero Creer - Luck Ra, La T y La M, Rusherking") {
-      promedio_3 = 54.92
+      promedio_3 = 52.008
       result = "Ya No Vuelvas (Versión Cuarteto) - Luck Ra, La K'onga, Ke Personajes";
       return result;
     } else if (song === "PUNTO G - Quevedo" && song_2 === "BESO - ROSALÍA, Rauw Alejandro") {
-      promedio_3 = 54.92
+      promedio_3 = 51.833
       result = "DISPARA *** - Nicki Nicole, Milo j"
       return result;
     } else if (song === "PUNTO G - Quevedo" && song_2 === "qué le pasa conmigo? - Nicki Nicole, Rels B") {
-      promedio_3 = 54.92
+      promedio_3 = 49.480
       result = "Feliz Cumpleaños Ferxxo - Feid";
       return result;
     }
 
   } else if (genre === "Rap") {
     if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "WHATS POPPIN - Jack Harlow") {
-      promedio_3 = 54.93
+      promedio_3 = 55.296
       result = "Sky - Playboi Carti";
       return result;
     } else if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "It Was A Good Day - Ice Cube") {
-      promedio_3 = 54.93
+      promedio_3 = 54.046
       result = "Yes Indeed - Lil Baby, Drake";
       return result;
     } else if (song ===  "RNP Cordae, (feat. Anderson .Paak)" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
-      promedio_3 = 54.93
+      promedio_3 = 53.206
       result = "Dior - Pop Smoke"
       return result;
     }
     else if (song === "The Real Slim Shady - Eminem" && song_2 === "It Was A Good Day - Ice Cube") {
-      promedio_3 = 54.93
+      promedio_3 = 52.383
       result = "Life Is Good (feat. Drake) - Future, Drake";
       return result;
     } else if (song === "The Real Slim Shady - Eminem" && song_2 === "WHATS POPPIN - Jack Harlow") {
-      promedio_3 = 54.93
+      promedio_3 = 54.550
       result = "20 Min - Lil Uzi Vert";
       return result;
     } else if (song === "The Real Slim Shady - Eminem" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
-      promedio_3 = 54.93
+      promedio_3 = 51.366
       result = "SICKO MODE - Travis Scott";
       return result;
     } else if (song === "No Role Modelz - J. Cole" && song_2 === "XO Tour Llif3 - Lil Uzi Vert") {
-      promedio_3 = 54.93
+      promedio_3 = 49.210
       result = "After Party - Don Toliver";
       return result;
     } else if (song === "No Role Modelz - J. Cole" && song_2 === "It Was A Good Day - Ice Cube") {
-      promedio_3 = 54.93
+      promedio_3 = 51.390
       result = "Superman - Eminem, Dina Rae";
       return result;
     } else if (song === "No Role Modelz - J. Cole" && song_2 === "WHATS POPPIN - Jack Harlow") {
-      promedio_3 = 54.93
+      promedio_3 = 51.666
       result = "Drip Too Hard (Lil Baby & Gunna) - Lil Baby, Gunna";
       return result;
     }

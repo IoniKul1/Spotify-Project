@@ -12,7 +12,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background-size:cover;
-  background-image: url(/Images/back.png);
+  background-color: #f5efe7;
 }
 
 .container {
