@@ -1,4 +1,4 @@
-const text = 'Como funciona el algoritmo recomendador de Spotify?',
+const text = '¿Como funciona el algoritmo recomendador de Spotify?',
       speed = 50,
       textContainer = document.querySelector('.title-typo');
 let i = 0;
