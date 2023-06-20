@@ -1,6 +1,5 @@
-
-const text = 'Bienvenido',
-      speed = 150,
+const text = 'Como funciona el algoritmo recomendador de Spotify?',
+      speed = 50,
       textContainer = document.querySelector('.title-typo');
 let i = 0;
 
@@ -26,10 +25,7 @@ function typewriting_2() {
     setTimeout(typewriting_2, speed_2);
   }
 }
-setTimeout(typewriting_2, 3000);
-
-
-
+setTimeout(typewriting_2, 4000);
 
 document.getElementById("playButton").addEventListener("click", function() {
   document.getElementById("title").classList.add("fade-out");
@@ -217,13 +213,11 @@ function showResult() {
   document.querySelector(".container-icon").style.display = "block";
   }, 1000);
   selections.result = getResultText();
-  var selectionsContainer = document.getElementById("selectionsContainer");
-  selectionsContainer.innerText += "Spotify codifica las canciones de la siguiente manera:" + "\n" + "Valence, Danceability, Energy, Instrumentalness, Popularity y Speechiness \n" + "\n";
-  selectionsContainer.innerText += "Luego se utilizan esos valores para calcular un promedio"+ "\n";
-  selectionsContainer.innerText += song + " con un promedio de " + promedio + "\n" + "\n";
-  selectionsContainer.innerText += song_2 + " con un promedio de " + promedio_2 + "\n" + "\n";
-  selectionsContainer.innerText += result + " con un promedio de " + promedio_3 + "\n" + "\n";
+  uno.innerHTML = "<br>"+song +"<br><br>" + "Promedio: " + promedio + "<br><br>";
+  dos.innerHTML += "<br>"+song_2 +"<br><br>"+ "Promedio: "+ promedio_2 + "<br><br>";
+  tres.innerHTML += "<br>"+result  +"<br><br>"+ "Promedio: "+ promedio_3 + "<br><br>";
 }
+
 
 function getResultText() {
   if (genre === "Techno") {

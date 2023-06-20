@@ -11,10 +11,11 @@
     <div class="exp">
     <div id="container-experimento">
         <div class="title" id="title">
-            <div class="container-typo">
+            <div class="container-typo" style="text-align: left; margin-left: 5%;">
                 <h1 class="title-typo"></h1>
               </div>
-              <div class="container-typo_2">
+              <br>
+              <div class="container-typo_2" style="text-align: left; margin-top: 4%; font-weight: 200;margin-left: 10%">
                 <h2 class="title-typo_2"></h2>
               </div>
             </div>
@@ -48,35 +49,107 @@
         </div>
       </div>
       <div class="container-icon" style="margin-top: 22%;">
-        <h2>Scrollear para conocer algoritmo que usa Spotify</h2>
-        <div class="chevron" style="margin-left: -20px;"></div>
-        <div class="chevron" style="margin-left: -20px;"></div>
+        <h2><a href="#values" style="text-decoration: none;color: inherit;">Scrollear para conocer algoritmo que usa Spotify</a></h2>       
+         <div class="chevron" style="margin-left: -20px;"></div>
         <div class="chevron" style="margin-left: -20px;"></div>
       </div>
     </div>
 </div>
 <div class="arrows"></div>
     <div class="container-arrows" style="margin: 20%;">
-        <div class="title" id="title">
-            <br><br><br><br><br><br><br><br>
+        <div class="title" id="values">
+            <p>Spotify codifica las canciones con los siguientes valores:</p>
+            <div class="columns_for_values">
+                <div class="columns">
+                    <br><br>
+                    <div class="card_values">
+                        <h1>Speechiness:</h1>
+                        <br>
+                        <h3>Detecta la presencia de palabras habladas.</h3>
+                    </div>
+                    <br><br>
+                    <div class="card_values">
+                        <h1>Popularity:</h1>
+                        <br>
+                        <h3>Describe cuán popular es una canción.</h3>
+                    </div>
+                    <br><br>
+                    <div class="card_values">
+                        <h1>Instrumentalness:</h1>
+                        <br>
+                        <h3>Representa la cantidad de voces en la canción.</h3>
+                    </div>
+                </div>
+                <div class="columns">
+                    <br><br>
+                    <canvas id="n_2"></canvas>
+                </div>
+                <div class="columns">
+                    <br><br>
+                    <div class="card_values">
+                        <h1>Danceability:</h1>
+                        <br>
+                        <h3>Describe qué tan adecuada es una pista para bailar</h3>
+                    </div>
+                    <br><br>
+                    <div class="card_values">
+                        <h1>Valence:</h1>
+                        <br>
+                        <h3>Describe la positividad musical transmitida.</h3>
+                    </div>
+                    <br><br>
+                    <div class="card_values">
+                        <h1>Energy:</h1>
+                        <br>
+                        <h3>Representa una medida perceptiva de la intensidad.</h3>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+            <a href="#siguiente" style="font-size: x-large;text-decoration: none;color: inherit;">Luego obtiene un promedio de estos parametros para cada canción</a>      
             <div id="selectionsContainer" style="font-size: 32px;"></div>
             <div class="container-icon" style="margin-top: 22%;">
               </div>
               </div> 
-              <br><br><br><br><br><br><br><br><br><br><br>
-              <h2>Scrollear para interactuar con el algoritmo que usa Spotify</h2>
                 <div class="chevron" style="margin-left: -20px;"></div>
                 <div class="chevron" style="margin-left: -20px;"></div>
                 <div class="chevron" style="margin-left: -20px;"></div>
                 <div class="chevron" style="margin-left: -20px;"></div>
+                </div>
             </div>
         </div>
+    </div>
+</div>
+<div class="arrows"></div>
+    <div class="container-arrows" style="margin: 20%;">
+        <div id="siguiente" class="title" >
+            <p>En base a tus elecciones anteriores:</p>
+            <br>
+            <div id="selectionsContainer_2" style="font-size: 32px;">
+                <div class="card_values_cont" id="uno"></div>
+                <div class="card_values_cont" id="dos"></div>
+                <br><br><br>
+                <p style="margin-top: -3%;">Spotify te recomendó:</p>
+                <br>
+                <div class="card_values_result" id="tres"></div>
+            </div>
+            <div class="container-icon" style="margin-top: 22%;">
+              </div>
+              </div> 
+              <a href="#algoritmo" style="font-size: x-large;text-decoration: none;color: inherit;">Lo que Spotify hace con canciones, tambien lo hace con playlists enteras! <br> Ahora es tu turno de interactuar con el algoritmo de Spotify</a>  
+                <div class="chevron" style="margin-left: -25%; margin-top: 2%;"></div>
+                <div class="chevron" style="margin-left: -25%;margin-top: 3%;"></div>
+                <div class="chevron" style="margin-left: -25%;margin-top: 4%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
     <div class="container" style="margin-top: 60%;">
         <div id="algoritmo">
             <div class="caja" id="caja">
                 <br>
-                <h1 style="margin-left: 4%; margin-bottom: -2%; font-size: xx-large;">Elige dos perfiles</h1>
+                <h1 style="margin-left: 4%; margin-bottom: 3%; font-size: xx-large;">Elige dos perfiles</h1>
                 <br><br><br>    
                     <div class="container-box">
                         <div class="card-container">
@@ -192,7 +265,9 @@
 <script src="/Charts/Lo-fi/Charty-L-A.js"></script>
 
 <script src="/Charts/Rock/Charty-Ro-A.js"></script>
+<script src="/Charts/nothing_2.js"></script>
 <script src="/Charts/nothing.js"></script>
+
 
 <script src="Cardy.js"></script>
 <script src="/repro music/music.js"></script>
