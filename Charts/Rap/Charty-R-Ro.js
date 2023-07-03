@@ -1,5 +1,5 @@
 const dataRRo = {
-  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
+  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speechiness'],
   datasets: [{
     label: 'Rap',
     data: [51.75, 70.33999999999999, 61.129999999999995, 8.8355, 73.3, 22.711000000000002],
@@ -30,9 +30,9 @@ const configRRo = {
     plugins: {
       legend: {
         labels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
 
@@ -45,19 +45,19 @@ const configRRo = {
           color: 'transparent'
         },
         grid: {
-          color: 'black'
+          color: 'white'
         },
         pointLabels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
         },
         ticks: {
           color: 'black',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
 
           }
         },

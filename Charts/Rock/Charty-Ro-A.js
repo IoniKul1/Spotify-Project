@@ -1,5 +1,5 @@
 const dataRoA = {
-  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
+  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speechiness'],
   datasets: [{
     label: 'Rock',
     data: [71.92999999999999, 60.75, 76.74000000000001, 6.248304999999999, 40.7, 7.048000000000001],
@@ -30,9 +30,9 @@ const configRoA = {
     plugins: {
       legend: {
         labels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
 
@@ -45,19 +45,19 @@ const configRoA = {
           color: 'transparent'
         },
         grid: {
-          color: 'black'
+          color: 'white'
         },
         pointLabels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
         },
         ticks: {
           color: 'black',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
 
           }
         },

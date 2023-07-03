@@ -1,5 +1,5 @@
 const data = {
-  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
+  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speechiness'],
   datasets: [{
     label: 'Techno',
     data: [77.31, 80.02000000000001, 86.6, 78.99000000000001, 21.2, 8.23],
@@ -31,9 +31,9 @@ const config = {
     plugins: {
       legend: {
         labels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
 
@@ -46,19 +46,19 @@ const config = {
           color: 'transparent'
         },
         grid: {
-          color: 'black'
+          color: 'white'
         },
         pointLabels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
         },
         ticks: {
           color: 'black',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
 
           }
         },

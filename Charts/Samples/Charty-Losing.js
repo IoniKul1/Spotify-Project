@@ -1,31 +1,41 @@
-const dataTL = {
+const dataLo = {
   labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speechiness'],
   datasets: [{
-    label: 'Techno',
-    data: [77.31, 80.02000000000001, 86.6, 78.99000000000001, 21.2, 8.23],
+    label: 'Losing It - FISHER',
+    data: [64, 76, 96, 70, 76, 6],
     fill: true,
-    backgroundColor: 'rgb(148,0,211,0.2)',
-    borderColor: 'rgb(148,0,211)',
-    pointBackgroundColor: 'rgb(148,0,211)',
+    backgroundColor: 'rgb(30,144,255,0.2)',
+    borderColor: 'rgb(30,144,255)',
+    pointBackgroundColor: 'rgb(30,144,255)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(148,0,211)'
-  }, { 
-    label: 'Lo-Fi Beats',
-    data: [11.375000000000002, 57.07000000000001, 18.019999999999996, 87.22000000000001, 45.6, 4.1770000000000005],
+    pointHoverBorderColor: 'rgb(30,144,255)'
+  }, 
+  { 
+    label: 'Soul Sacrifice - Dombresky',
+    data: [32,45, 12, 90, 22, 5],
     fill: true,
-    backgroundColor: 'rgb(255,182,193,0.2)',
-    borderColor: 'rgb(255,182,193)',
-    pointBackgroundColor: 'rgb(255,182,193)',
+    backgroundColor: 'rgb(47,139,87,0.2)',
+    borderColor: 'rgb(47,139,87)',
+    pointBackgroundColor: 'rgb(47,139,87)',
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(255,182,193)'
-  }],
+    pointHoverBorderColor: 'rgb(47,139,87)'
+  },{ 
+    label: 'Ya Kidding - FISHER',
+    data: [77, 81, 98, 55, 62, 15],
+    fill: true,
+    backgroundColor: 'rgb(46,139,87,0.2)',
+    borderColor: 'rgb(46,139,87)',
+    pointBackgroundColor: 'rgb(46,139,87)',
+    pointBorderColor: '#fff',
+    pointHoverBackgroundColor: '#fff',
+    pointHoverBorderColor: 'rgb(46,139,87)'
+  }, ],
 };
-
-const configTL = {
+const configLo = {
   type: 'radar',
-  data: dataTL,
+  data: dataLo,
   options: {
     plugins: {
       legend: {
@@ -65,4 +75,4 @@ const configTL = {
     }
   }
 };
-const radarChartTL = new Chart(document.getElementById('T-L'), configTL);
+const radarChartLo = new Chart(document.getElementById('Lo'), configLo);

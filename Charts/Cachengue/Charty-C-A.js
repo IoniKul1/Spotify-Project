@@ -1,5 +1,5 @@
 const dataCA = {
-  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speachness'],
+  labels: ['Valence', 'Danceability', 'Energy', 'Instrumentalness', 'Popularity', 'Speechiness'],
   datasets: [{
     label: 'Cachengue',
     data: [67.59, 70.61000000000001, 67.03999999999999, 0.004240299999999999, 63.0, 9.41],
@@ -29,9 +29,9 @@ const configCA = {
     plugins: {
       legend: {
         labels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
 
@@ -44,19 +44,19 @@ const configCA = {
           color: 'transparent'
         },
         grid: {
-          color: 'black'
+          color: 'white'
         },
         pointLabels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
         },
         ticks: {
           color: 'black',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
 
           }
         },
@@ -64,6 +64,5 @@ const configCA = {
     }
   }
 };
-
 
 const radarChartCA = new Chart(document.getElementById('C-A'), configCA);

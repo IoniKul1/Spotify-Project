@@ -30,9 +30,9 @@ const configCRo = {
     plugins: {
       legend: {
         labels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
 
@@ -45,19 +45,19 @@ const configCRo = {
           color: 'transparent'
         },
         grid: {
-          color: 'black'
+          color: 'white'
         },
         pointLabels: {
-          color: 'black',
+          color: 'white',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
             size: 14,
           }
         },
         ticks: {
           color: 'black',
           font: {
-            family: 'Domine, serif',
+            family: 'Figtree, sans-serif',
 
           }
         },

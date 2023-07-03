@@ -33,7 +33,7 @@
           <button class="songButton greenButton" id="songButton3"></button>
         </div>
         <div id="question3" class="question hidden">
-            <h2>¿Qué otra canción elegirías entre estas opciones?</h2>
+            <h2>¿Qué cancion te parece que Spotify te va a recomendar?</h2>
             <button class="song_2Button greenButton" id="song_2Button1"></button>
             <button class="song_2Button greenButton" id="song_2Button2"></button>
             <button class="song_2Button greenButton" id="song_2Button3"></button>
@@ -43,7 +43,7 @@
           <div class="loader"></div>
         </div>
         <div id="result" class="hidden">
-          <h1>Resultado:</h1>
+          <h1>Recomendación de Spotify:</h1>
           <p id="selections"></p>
           <p id="resultText"></p>
         </div>
@@ -58,7 +58,7 @@
 <div class="arrows"></div>
     <div class="container-arrows" style="margin: 20%;">
         <div class="title" id="values">
-            <p>Spotify codifica las canciones con los siguientes valores:</p>
+            <p style="font-weight: 800;">Spotify codifica las canciones con los siguientes valores:</p>
             <div class="columns_for_values">
                 <div class="columns">
                     <br><br>
@@ -80,9 +80,17 @@
                         <h3>Representa la cantidad de voces en la canción.</h3>
                     </div>
                 </div>
-                <div class="columns">
+                <div class="columns" style="margin-top: 1%;">
                     <br><br>
-                    <canvas id="n_2"></canvas>
+                    <canvas id="Cons" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="Lo" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="Esp" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="Love" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="MA" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="NoRole" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="Punto" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="RNP" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
+                    <canvas id="Slim" style="visibility: hidden; display: block; box-sizing: border-box; height: 480px; width: 480px;"></canvas>
                 </div>
                 <div class="columns">
                     <br><br>
@@ -105,8 +113,11 @@
                     </div>
                 </div>
             </div>
+            <h2 style="margin-left:30%; margin-right: 30%; text-align: center; font-size: 20px; margin-top: -2%;">Vemos como las areas se superponen representando que las canciones comparten caractersticas, asi es como funciona el algoritmo recomendador de Spotify.</h2>
+
             <br><br><br>
-            <a href="#siguiente" style="font-size: x-large;text-decoration: none;color: inherit;">Luego obtiene un promedio de estos parametros para cada canción</a>      
+            <br><br>
+            <a href="#siguiente" style="font-size: x-large;text-decoration: none;">Lo que Spotify hace con canciones, tambien lo puede hacer con playlists enteras, pruebalo tu mismo!</a>      
             <div id="selectionsContainer" style="font-size: 32px;"></div>
             <div class="container-icon" style="margin-top: 22%;">
               </div>
@@ -120,31 +131,6 @@
         </div>
     </div>
 </div>
-<div class="arrows"></div>
-    <div class="container-arrows" style="margin: 20%;">
-        <div id="siguiente" class="title" >
-            <p>En base a tus elecciones anteriores:</p>
-            <br>
-            <div id="selectionsContainer_2" style="font-size: 32px;">
-                <div class="card_values_cont" id="uno"></div>
-                <div class="card_values_cont" id="dos"></div>
-                <br><br><br>
-                <p style="margin-top: -3%;">Spotify te recomendó:</p>
-                <br>
-                <div class="card_values_result" id="tres"></div>
-            </div>
-            <div class="container-icon" style="margin-top: 22%;">
-              </div>
-              </div> 
-              <a href="#algoritmo" style="font-size: x-large;text-decoration: none;color: inherit;">Lo que Spotify hace con canciones, tambien lo hace con playlists enteras! <br> Ahora es tu turno de interactuar con el algoritmo de Spotify</a>  
-                <div class="chevron" style="margin-left: -25%; margin-top: 2%;"></div>
-                <div class="chevron" style="margin-left: -25%;margin-top: 3%;"></div>
-                <div class="chevron" style="margin-left: -25%;margin-top: 4%;"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
     <div class="container" style="margin-top: 60%;">
         <div id="algoritmo">
             <div class="caja" id="caja">
@@ -153,42 +139,42 @@
                 <br><br><br>    
                     <div class="container-box">
                         <div class="card-container">
-                            <div class="card" id="0" data-card-id="0">
+                            <div class="card" id="0" data-card-id="0" style="background-image: linear-gradient(to top, #2e2e2e 20%, rgba(147, 92, 190, 0.5));background-size: 100% 100%;background-repeat: no-repeat;">
                                 <div class="card-content">
                                     <img src="/Images/Yoni.png" alt="Foto de perfil">
                                     <h1>Yoni</h1>
                                     <h3>Techno</h3>
                                 </div>
                             </div>
-                            <div class="card" id="1" data-card-id="1">
+                            <div class="card" id="1" data-card-id="1" style="background-image: linear-gradient(to top, #2e2e2e 20%, rgba(77, 150, 218, 0.5));background-size: 100% 100%;background-repeat: no-repeat;">
                                 <div class="card-content">
                                     <img src="/Images/Martin.png" alt="Foto de perfil">
                                     <h1>Martin</h1>
                                     <h3>Rap</h3>
                                 </div>
                             </div>
-                            <div class="card" id="2" data-card-id="2">
+                            <div class="card" id="2" data-card-id="2" style="background-image: linear-gradient(to top, #2e2e2e 20%, rgba(67, 184, 123, 0.5));background-size: 100% 100%;background-repeat: no-repeat;">
                                 <div class="card-content">
                                     <img src="/Images/John.png" alt="Foto de perfil">
                                     <h1>John</h1>
                                     <h3>Cachengue</h3>
                                 </div>
                             </div>
-                            <div class="card" id="3" data-card-id="3">
+                            <div class="card" id="3" data-card-id="3" style="background-image: linear-gradient(to top, #2e2e2e 20%, rgba(209, 138, 138, 0.5));background-size: 100% 100%;background-repeat: no-repeat;">
                                 <div class="card-content">
                                     <img src="/Images/Phillip.png" alt="Foto de perfil">
                                     <h1>Phillip</h1>
                                     <h3>Lo-Fi</h3>
                                 </div>
                             </div>
-                            <div class="card" id="4" data-card-id="4">
+                            <div class="card" id="4" data-card-id="4" style="background-image: linear-gradient(to top, #2e2e2e 20%, rgba(229, 81, 81, 0.5));background-size: 100% 100%;background-repeat: no-repeat;">
                                 <div class="card-content">
                                     <img src="/Images/Alice.png" alt="Foto de perfil">
                                     <h1>Alice</h1>
                                     <h3>Rock</h3>
                                 </div>
                             </div>
-                            <div class="card" id="5" data-card-id="5">
+                            <div class="card" id="5" data-card-id="5" style="background-image: linear-gradient(to top, #2e2e2e 20%, rgba(218, 195, 118, 0.5));background-size: 100% 100%;background-repeat: no-repeat;">
                                 <div class="card-content">
                                     <img src="/Images/Bob.png" alt="Foto de perfil">
                                     <h1>Bob</h1>
@@ -266,6 +252,17 @@
 
 <script src="/Charts/Rock/Charty-Ro-A.js"></script>
 <script src="/Charts/nothing_2.js"></script>
+
+<script src="/Charts/Samples/Charty-Cons.js"></script>
+<script src="/Charts/Samples/Charty-Espacio.js"></script>
+<script src="/Charts/Samples/Charty-Losing.js"></script>
+<script src="/Charts/Samples/Charty-Love.js"></script>
+<script src="/Charts/Samples/Charty-MA.js"></script>
+<script src="/Charts/Samples/Charty-NoRole.js"></script>
+<script src="/Charts/Samples/Charty-Punto.js"></script>
+<script src="/Charts/Samples/Charty-RNP.js"></script>
+<script src="/Charts/Samples/Charty-Slim.js"></script>
+
 <script src="/Charts/nothing.js"></script>
 
 
