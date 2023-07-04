@@ -15,7 +15,7 @@ body {
   justify-content: center;
   flex-direction: column;
   background-size:cover;
-  background-color: #000000;
+  background-image: url(patronn.png);
 }
 
 .container {
