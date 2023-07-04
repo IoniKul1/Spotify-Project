@@ -10,17 +10,6 @@ const dataLo = {
     pointBorderColor: '#fff',
     pointHoverBackgroundColor: '#fff',
     pointHoverBorderColor: 'rgb(30,144,255)'
-  }, 
-  { 
-    label: 'Soul Sacrifice - Dombresky',
-    data: [32,45, 12, 90, 22, 5],
-    fill: true,
-    backgroundColor: 'rgb(47,139,87,0.2)',
-    borderColor: 'rgb(47,139,87)',
-    pointBackgroundColor: 'rgb(47,139,87)',
-    pointBorderColor: '#fff',
-    pointHoverBackgroundColor: '#fff',
-    pointHoverBorderColor: 'rgb(47,139,87)'
   },{ 
     label: 'Ya Kidding - FISHER',
     data: [77, 81, 98, 55, 62, 15],
